@@ -1,0 +1,65 @@
+.clients {
+    padding:  80px 0px;
+
+
+  }
+
+  @keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-250px *7));
+    }
+  }
+
+.clients-slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+   
+
+    
+   
+  }
+
+  .clients-slider .clients-slider-track:hover{
+    animation-play-state: paused;
+    
+  }
+
+
+  .clients-slider-track{
+    animation:  60s scroll  linear infinite;
+    display: flex;
+    width: calc(250px *14);
+   
+
+ 
+  }
+
+  .clients-slider-track .clients-slide{
+    height: 100px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+
+  
+  .clients .clients-slide img {
+    opacity: 0.5;
+    transition: 0.3s;
+    filter: grayscale(100);
+  }
+  
+  .clients .clients-slide img:hover {
+    filter: none;
+    opacity: 1;
+  }
+  

@@ -1,0 +1,237 @@
+/*--------------------------------------------------------------
+# Documentos
+--------------------------------------------------------------*/
+.docs h1{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    color: var(--color-default);
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 376px) {
+    .docs h1{
+      text-align: center;
+      font-size: 38px;
+    }
+    
+  }
+
+  .accordion{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 20px;
+    
+  }
+
+  @media  (max-width: 376px) {
+  .accordion{
+      width: 100%;
+    }
+    
+  }
+  .accordion a{
+    color: var(--color-default);
+    text-decoration: none;
+  }
+  .accordion a:hover{
+    color: var(--color-primary);
+  }
+
+  .accordion-button:focus{
+    border: none;
+    box-shadow: none;
+  }
+
+  .accordion-button {
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  padding: 30px;
+
+  }
+
+  .accordion-button button {
+    background-color: #F0F0F0;
+    border-radius: 50px;
+    padding: 30px;
+  
+    }
+
+
+  .accordion-button:not(.collapsed) {
+    background-color: #F0F0F0;
+    color: var(--color-primary);
+    border-radius: 5px;
+    }
+
+   .accordion-button .collapsed{
+    border-radius: 5px;
+  }
+
+  .accordion-item{
+    background-color: white;
+    border: none;
+    border-radius: -10px;
+    padding-top: 20px;
+  }
+
+  .accordion-header i{
+    padding-right: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00376c;
+
+  }
+
+
+  .accordion-body{
+
+    background-color: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: none;
+    border-top-left-radius: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .accordion-body a {
+    padding: 10px;
+  }
+
+  .accordion-body a i{
+    padding-right: 7px;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+
+
+  .accordion-item:first-of-type{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .accordion-item:first-of-type .accordion-button{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+
+
+  .docs h2{
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    color: var(--color-default);
+  }
+  .docs .docs-list {
+    padding: 0 100px;
+  }
+  
+  .docs .docs-list ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .docs .docs-list li+li {
+    margin-top: 15px;
+  }
+  
+  .docs .docs-list li {
+    padding: 30px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .docs .docs-list a {
+    display: block;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 30px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .docs .docs-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #00376c;
+  }
+  
+  .docs .docs-list .icon-download {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    left: 60px;
+    color: #00376c;
+  }
+  
+  .docs .docs-list .icon-download:hover {
+    color: var(--color-primary);
+  }
+  
+  .docs .docs-list .icon-show,
+  .docs .docs-list .icon-close {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .docs .docs-list a p {
+    margin-bottom: 0;
+    padding: 20px 0 0 60px;
+    color: #2c4964;
+  }
+  
+  .docs .docs-list a p:hover {
+    color: var(--color-primary);
+  }
+  
+  
+  .docs .docs-list .icon-show {
+    display: none;
+  }
+  
+  .docs .docs-list a.collapsed {
+    color: #2c4964;
+  }
+  
+  .docs .docs-list a.collapsed:hover {
+    color: var(--color-primary);
+  }
+  
+  .docs .docs-list a.collapsed .icon-show {
+    display: inline-block;
+  }
+  
+  .docs .docs-list a.collapsed .icon-close {
+    display: none;
+  }
+  
+  @media (max-width: 1200px) {
+    .docs .docs-list {
+      padding: 0;
+    }
+  
+    .docs h2{
+      text-align: center;
+      font-size: 38px;
+    }
+  }
+  
+  /*
+  @media (max-width: 991px) {
+    .docs h2 {
+      margin: 0;
+    }
+  }*/

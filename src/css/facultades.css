@@ -1,0 +1,134 @@
+
+/*--------------------------------------------------------------
+# Facultades Page 
+--------------------------------------------------------------*/
+
+.facultades{
+    justify-content: center;
+}
+
+.facultades p{
+    text-align: justify;
+}
+
+.facultades h2{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--font-primary);
+    margin-bottom: 50px;
+ }
+
+  @media (max-width: 1200px) {
+
+    .facultades h2 {
+    text-align: center;
+      margin: 0 0 60px 0;
+    }
+
+  }
+  @media (min-width: 425px) {
+    .facultades{
+         margin: 0 auto;
+    }
+    
+  }
+  
+
+  
+  .facultades .facultades-item {
+    box-shadow: 19px 26px 32px -2px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+
+  
+  .facultades .facultades-item .facultades-img img {
+    transition: 0.5s;
+  }
+  
+  .facultades .facultades-item .facultades-date {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-primary);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 6px 12px;
+    font-weight: 500;
+    opacity: 0.8;
+    
+  }
+  
+  .facultades .facultades-item .facultades-content {
+    padding: 30px;
+  
+  }
+  
+  .facultades .facultades-item .facultades-title {
+    font-size: 24px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    text-align: center;
+    
+  }
+  
+  .facultades .facultades-item .meta i {
+    font-size: 16px;
+    color: var(--color-primary);
+  }
+
+  .facultades .facultades-item .meta .bar {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  @media (min-width: 768px){
+    .facultades .facultades-item .meta .bar {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
+  }
+
+
+  
+  .facultades .facultades-item .meta span   {
+    font-size: 15px;
+    color: #838893;
+    
+  }
+
+  
+  
+  .facultades .facultades-item hr {
+    color: #888;
+    margin: 20px 0;
+  }
+  
+  .facultades .facultades-item .readmore {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    line-height: 1;
+    transition: 0.3s;
+    color: #838893;
+  }
+  
+  .facultades .facultades-item .readmore i {
+    line-height: 0;
+    margin-left: 6px;
+    font-size: 16px;
+  }
+  
+  .facultades .posfacultadest-item:hover .facultades-title,
+  .facultades .facultades-item:hover .readmore {
+    color: var(--color-primary);
+  }
+  
+  .facultades .facultades-item:hover .facultades-img img {
+    transform: scale(1.1);
+  }
