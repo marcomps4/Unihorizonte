@@ -1,8 +1,24 @@
 import React from "react";
 import '../css/investigacion.css';
+import bannercadmon from '../../src/img/investigacion/banner.jpg';
+import revista1 from '../img/investigacion/styllus.png';
+import logopia from '../img/investigacion/logo_pias.png';
+import revistapdf1 from '../../src/documentos/revista_stylus.pdf';
+import documpia from '../../src/documentos/formato_PIA_2023_VF.docx';
 import prueba from '../img/investigacion/inves1.jpg';
-import logoImg from '../img/investigacion/logo_gcena.svg'
-import {CardInvestigacion} from '../componentes/investigacion/CardInvestigacion'
+import prueba1 from '../img/investigacion/invest2.jpg';
+import prueba2 from '../img/investigacion/invest3.jpg';
+import prueba4 from '../img/investigacion/invest5.jpg';
+import prueba5 from '../img/investigacion/invest6.jpg';
+import prueba6 from '../img/investigacion/invest7.jpg';
+import prueba7 from '../img/investigacion/invest8.jpg';
+import logoImg from '../img/investigacion/logo_gcena.svg';
+import logoImg1 from '../img/investigacion/logo-sisom.svg';
+import logoImg4 from '../img/investigacion/logo-gastro.svg';
+import logoImg5 from '../img/investigacion/logo_vertice.svg';
+import logoImg6 from '../img/investigacion/logo-tech.svg';
+import {CardInvestigacion} from '../componentes/investigacion/CardInvestigacion';
+import {GrDocumentDownload} from "react-icons/gr";
 
 
 const Investigación = () => {
@@ -10,8 +26,8 @@ const Investigación = () => {
   const Cardinvestigacion = [
     {
       title: "Grupo de investigación en Seguridad Industrial, Salud Ocupacional y Medio Ambiente",
-      imgUrl: logoImg,
-      imgback: prueba,
+      imgUrl: logoImg1,
+      imgback: prueba1,
       categoria: "COL0107136- Categoría C",
       depto: "Facultad de ingeniería –Ingeniería en Seguridad Industrial e Higiene Ocupacional y Técnico Profesional en Seguridad y Salud en el trabajo",
       lider: "Líder(es): Diana Tamayo-Camilo Torres",
@@ -20,7 +36,7 @@ const Investigación = () => {
     {
       title: "Grupo de Investigación en Enseñanza de las Ciencias Exactas y Naturales Aplicadas",
       imgUrl: logoImg,
-      imgback: prueba,
+      imgback: prueba2,
       categoria: "COL0199192-Categoría C",
       depto: "Facultad de ingeniería",
       lider: "Líder(es): Luisa García-Diana Tamayo",
@@ -37,17 +53,17 @@ const Investigación = () => {
     },
     {
       title: "Grupo de Investigación Horizonte Cultural Gastronómico",
-      imgUrl: logoImg,
-      imgback: prueba,
+      imgUrl: logoImg4,
+      imgback: prueba4,
       categoria: "COL0231754",
       depto: "Facultad de Gastronomía",
       lider: "Líder: Edy Mayerly González",
-      email: "",
+      email: "gastronomia@unihorizonte.edu.co",
     },
     {
       title: "Grupo de Investigación Vértice",
-      imgUrl: logoImg,
-      imgback: prueba,
+      imgUrl: logoImg5,
+      imgback: prueba5,
       categoria: "COL0232223",
       depto: "Facultad de Comunicación y Marketing Digital-Diseño gráfico, comunicación y mercadeo",
       lider: "Líder: Martha Cristina Ramírez",
@@ -55,17 +71,17 @@ const Investigación = () => {
     },
     {
       title: "Grupo de Investigación TECH-INNOVA",
-      imgUrl: logoImg,
-      imgback: prueba,
+      imgUrl: logoImg6,
+      imgback: prueba6,
       categoria: "COL0229658",
       depto: "Facultad de ingeniería – ingeniería de Software",
       lider: "Líder: Diana Patricia Camargo",
-      email: "",
+      email: "rectoria@unihorizonte.edu.co",
     },
     {
       title: "Grupo de Investigación NANSHE",
       imgUrl: logoImg,
-      imgback: prueba,
+      imgback: prueba7,
       categoria: "COL0233982",
       depto: "Facultad de Ciencias Jurídicas",
       lider: "Líder: Jayme Baez",
@@ -78,6 +94,11 @@ const Investigación = () => {
 
     return(
         <>
+
+  <div className="breadcrumbs d-flex align-items-center" style={{backgroundImage:`url(${bannercadmon})`}}>
+        <div className="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+        </div>
+        </div>
 
 <section id="investigacion" className="investigacion">
       <div className="container" data-aos="fade-up">
@@ -111,9 +132,96 @@ const Investigación = () => {
 
           
         </div>
+        <div className="container" data-aos="fade-up">
+        <div className="col-lg-12 col-md-12 text-center align-items-center">
+        <h2 className="title-grupos">Divulgación de la investigación</h2>
+        </div>
+        </div>
 
+        <div className="container d-flex">
+
+        <div className="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <h3 className="text-center">Enlace a Stylus</h3>
+            <a href={revistapdf1} target="_blank"><img src={revista1} className="img-fluid revistas" alt=""/></a>
+          </div>
+
+          <div className="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <h3 className="text-center ">Enlace a TECKNE</h3>
+            <img src={revista1} className="img-fluid revistas" alt=""/>
+          </div>
+          </div>
+
+          <div className="container" data-aos="fade-up">
+        <div className="col-lg-12 col-md-12 text-center align-items-center">
+        <h2 className="title-grupos">Nuestros eventos</h2>
+        </div>
+        </div>
+
+            
       </div>
     </section>
+
+    <div className=" bg-section pias" >
+
+    <div className="col-lg-12 col-md-12 text-center align-items-center justify-content-center">
+        <h2 className="title-pias">Proyectos Integrados de Aula</h2>
+        <img src={logopia} alt="logo_pia" className="logo_pias"/>
+        </div>
+
+        <div className="container d-flex">
+
+        <div className="col-xl-6 col-md-6 pias-item" data-aos="zoom-in" data-aos-delay="200">
+            <p className="text-pias">Proyectos de investigación formativa elaborados bajo el Aprendizaje Basado en Proyectos como trabajos educativos prolongados que se realizan a lo largo del semestre, en los cuales se integran conocimientos y conceptos de diferentes asignaturas para su construcción. Estos se socializan y evalúan durante la semana Horizontista.</p>
+            </div>
+
+
+            <div className="col-xl-6 col-md-6 pias-item" data-aos="zoom-in" data-aos-delay="200">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" className="text-center">Actividad Desarrollo de PIAs</th>
+                    <th scope="col" className="text-center">Fecha Semestre académico</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Sesiones de acompañamiento CLEO</td>
+                    <td>30 de octubre – 15 de noviembre de 2023</td>
+                  </tr>
+                  <tr>
+                    <td>Inscripción encuentro (Pre-inscripción)</td>
+                    <td>Semana 1 – 10 de noviembre</td>
+                  </tr>
+                  <tr>
+                    <td>Entrega de PIAs seleccionados</td>
+                    <td>16 de noviembre de 2023</td>
+                  </tr>
+                  <tr>
+                    <td>Socialización Rúbrica de evaluación</td>
+                    <td>14-18 de noviembre de 2023</td>
+                  </tr>
+                  <tr>
+                    <td>Presentación PIAs</td>
+                    <td>23, 24, 25 de noviembre de 2023</td>
+                  </tr>
+                  </tbody>
+              </table>
+            </div>
+
+        </div>
+        
+        <div className="col-lg-12 col-md-12 align-items-center justify-content-center">
+          <div className="container d-flex pia-descarga">
+          <i><GrDocumentDownload/></i>
+          <a href={documpia}><p>Archivo pia</p></a>
+          </div>
+          <div className="container d-flex pia-descarga">
+          <i><GrDocumentDownload/></i>
+          <p>Poster pia</p>
+          </div>
+        </div>
+
+    </div>
         </>
     )
 }

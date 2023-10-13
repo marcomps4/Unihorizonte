@@ -11,7 +11,7 @@ export const CardInvestigacion=({title, imgUrl, imgback, categoria, depto, lider
               </div>
               <div className="details position-relative">
                 <div className="icon">
-                <img src={imgUrl} className="img-fluid" alt=""/>
+                <img src={imgUrl} className="logo_investigacion" alt="logo"/>
                 </div>
                   <h3>{title}</h3>
                 <p><strong>{categoria}</strong></p>

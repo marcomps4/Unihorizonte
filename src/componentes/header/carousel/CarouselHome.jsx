@@ -20,11 +20,11 @@ const Carouselh = () =>{
           </Carousel.Item>
 
         <Carousel.Item>
-          <img src={img1} alt="" text="First slide" className="img-fliud" />
+         <a href="https://subscribepage.io/NluB9F" target="_blank"> <img src={img1} alt="" text="First slide" className="img-fliud" /></a>
           </Carousel.Item>
 
         <Carousel.Item>
-        <img src={img2} alt="" text="First slide" className="img-fliud" />
+        <a href="https://unihorizonte.edu.co/consulta-tus-horarios-2023-2/"><img src={img2} alt="" text="First slide" className="img-fliud" target="_blank" /></a>
         </Carousel.Item>
 
         <Carousel.Item>
