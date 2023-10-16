@@ -19,6 +19,7 @@ import logoImg5 from '../img/investigacion/logo_vertice.svg';
 import logoImg6 from '../img/investigacion/logo-tech.svg';
 import {CardInvestigacion} from '../componentes/investigacion/CardInvestigacion';
 import {GrDocumentDownload} from "react-icons/gr";
+import {Galeria} from "../componentes/investigacion/Gallery";
 
 
 const Investigación = () => {
@@ -140,12 +141,12 @@ const Investigación = () => {
 
         <div className="container d-flex">
 
-        <div className="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
             <h3 className="text-center">Enlace a Stylus</h3>
             <a href={revistapdf1} target="_blank"><img src={revista1} className="img-fluid revistas" alt=""/></a>
           </div>
 
-          <div className="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+          <div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
             <h3 className="text-center ">Enlace a TECKNE</h3>
             <img src={revista1} className="img-fluid revistas" alt=""/>
           </div>
@@ -156,10 +157,15 @@ const Investigación = () => {
         <h2 className="title-grupos">Nuestros eventos</h2>
         </div>
         </div>
+        <div className="container galeria_investigacion">
+        <div className="col-xl-12 col-md-12" data-aos="zoom-in" data-aos-delay="200">
+        <Galeria/>
+        </div>
+        </div>
 
             
       </div>
-    </section>
+   
 
     <div className=" bg-section pias" >
 
@@ -170,12 +176,12 @@ const Investigación = () => {
 
         <div className="container d-flex">
 
-        <div className="col-xl-6 col-md-6 pias-item" data-aos="zoom-in" data-aos-delay="200">
+        <div className="col-lg-6 col-sm-12 pias-item" data-aos="zoom-in" data-aos-delay="200">
             <p className="text-pias">Proyectos de investigación formativa elaborados bajo el Aprendizaje Basado en Proyectos como trabajos educativos prolongados que se realizan a lo largo del semestre, en los cuales se integran conocimientos y conceptos de diferentes asignaturas para su construcción. Estos se socializan y evalúan durante la semana Horizontista.</p>
             </div>
 
 
-            <div className="col-xl-6 col-md-6 pias-item" data-aos="zoom-in" data-aos-delay="200">
+            <div className="col-lg-6 col-sm-12 pias-item" data-aos="zoom-in" data-aos-delay="200">
             <table class="table">
                 <thead>
                   <tr>
@@ -210,18 +216,24 @@ const Investigación = () => {
 
         </div>
         
-        <div className="col-lg-12 col-md-12 align-items-center justify-content-center">
-          <div className="container d-flex pia-descarga">
-          <i><GrDocumentDownload/></i>
-          <a href={documpia}><p>Archivo pia</p></a>
+        
+        <div className=" container col-lg-12 col-sm-12 align-items-center justify-content-center">
+        <div className="pia-descarga">
+          <div className=" d-flex justify-content-center ">
+          <a href={documpia}><i><GrDocumentDownload/></i>
+          <p>Archivo pia</p></a>
           </div>
-          <div className="container d-flex pia-descarga">
-          <i><GrDocumentDownload/></i>
-          <p>Poster pia</p>
+          <div className=" d-flex justify-content-center">
+          <a href={documpia}><i><GrDocumentDownload/></i>
+          <p>Poster pia</p></a>
           </div>
+        </div>
         </div>
 
     </div>
+
+  
+    </section>
         </>
     )
 }

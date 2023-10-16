@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+# inscripcion Section
+--------------------------------------------------------------*/
+.inscripcion .content {
+    padding: 30px 0;
+  }
+  
+  .inscripcion .content h3 {
+    font-size: 32px;
+    color: var(--color-secondary);
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    position: relative;
+  }
+  
+  .inscripcion .content h3:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--color-primary);
+    left: 0;
+    bottom: 0;
+  }
+  
+  .inscripcion .content p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  
+  

@@ -86,6 +86,10 @@
     padding: 20px;
   }
 
+  .investigacion .galeria_investigacion{
+    padding: 50px;
+  }
+
   .pias{
     padding: 20px 0;
     margin-bottom: 50px;
@@ -112,8 +116,10 @@
   }
 
   .pia-descarga{
-    align-items: center;
+    display: flex;
   }
+
+
 
   .pia-descarga i {
     margin-top: -23px;
@@ -128,4 +134,13 @@
   .pia-descarga a{
    text-decoration: none;
    color: var(--color-secondary);
+   display: flex;
+   align-items: center;
+   margin-right: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .pia-descarga{
+      flex-direction: column;
+    }
   }
