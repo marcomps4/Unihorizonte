@@ -73,7 +73,7 @@ const Header = () => {
               <li className="dropdown"onClick={toggleDropdown} ><Link to="#"><span>Nuestra Institución</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                 <ul>
                   <li><Link to="/QuienesSomos" onClick={toggleDropdown}>Quienes Somos</Link></li>
-                  <li><Link to="innovacion.html" onClick={toggleDropdown}>Instituto de Innovación y Emprendimiento</Link></li>
+                  <li><Link to="/construccion" onClick={toggleDropdown}>Instituto de Innovación y Emprendimiento</Link></li>
 
                 </ul>
               </li>
@@ -110,14 +110,14 @@ const Header = () => {
 
           <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Admisiones</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li><Link to="proceso_inscripcion.html"onClick={toggleDropdown}>Proceso de Inscripción</Link></li>
-              <li><a href="https://unihorizonte.edu.co/admisiones/financiamiento/"onClick={toggleDropdown}>Financiamento</a></li>
+              <li><Link to="/construccion"onClick={toggleDropdown}>Proceso de Inscripción</Link></li>
+              <li><Link to="/construccion"onClick={toggleDropdown}>Financiamento</Link></li>
             </ul>
           </li>
 
-          <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Proyección Social</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={toggleDropdown}><Link to="/construccion"><span>Proyección Social</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Egresados</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+              <li className="dropdown" onClick={toggleDropdown}><Link to="/construccion"><span>Egresados</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                 <ul>
                   <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/egresados/"onClick={toggleDropdown}>Egresados</a></li>
                   <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/eventos-para-egresados/"onClick={toggleDropdown}>Noticias para Egresados</a></li>
@@ -139,7 +139,7 @@ const Header = () => {
 
           <li ><a href="https://campusvirtual.unihorizonte.edu.co/f70d2d351209d4ccee0099b992b51a53/campus/index.html" target="_blank" >Campus Virtual</a></li>
 
-          <li ><Link to="#" target="_blank">Q10</Link></li>
+          <li ><Link to="/construccion" target="_blank">Q10</Link></li>
           
           
 

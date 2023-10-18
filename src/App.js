@@ -35,7 +35,8 @@ import EspGsst from '../src/pages/programas/Posgrados/EspGsst';
 import EspGerenCalidad from '../src/pages/programas/Posgrados/EspGerenciaCalidad';
 import EspGerenciaProyectos from '../src/pages/programas/Posgrados/EspGerenciaProyectos';
 import EspAva from '../src/pages/programas/Posgrados/EspAva';
-import Investigación from '../src/pages/Investigacion'
+import Investigación from '../src/pages/Investigacion';
+ import Construccion from '../src/pages/Construccion'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -82,7 +83,7 @@ function App() {
       <Route path='/facultades/facultadCienciasAdministrativas/tecGestionAdministrativayFinanciera' element={<TecGestionAdminiFinan/>}/>
       <Route path='/facultades/facultadCienciasAdministrativas/AdminSst' element={<Sst/>}/>
       <Route path='/investigacion' element={<Investigación/>}/>
-
+      <Route path='/construccion' element={<Construccion/>}/>
       <Route /*path='*' element={<Page404/>}*//>
     </Routes>
     <Whatsapp/>

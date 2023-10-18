@@ -2386,5 +2386,19 @@ color: #FFF;
 
 
 /*--------------------------------------------------------------
-# Footer
+# sitio construccion
 --------------------------------------------------------------*/
+.sitio-construccion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.sitio-construccion img{
+  width: 1000px;
+  margin-top: 80px;
+  padding: 40px 0 40px 0 ;
+}
+
+
