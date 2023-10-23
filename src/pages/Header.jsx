@@ -8,6 +8,15 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: (0,0),
+      behavior: 'smooth',
+    });
+
+  return null;
+}
+
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
 
  
@@ -58,7 +67,7 @@ const Header = () => {
       <header id="header" className= "header d-flex align-items-center">
          <div className="container-fluid container-xl d-flex align-items-center justify-content-between ">
 
-      <Link to="/" className="logo d-flex align-items-center">
+      <Link to="/" className="logo d-flex align-items-center" onClick={ScrollToTop}>
         <img src={logo} alt="Logo Unihorizonte"/> 
         
       </Link>
@@ -68,33 +77,33 @@ const Header = () => {
       <nav id="nav_bar" className="nav_bar"> 
       
         <ul>
-          <li className="dropdown"onClick={toggleDropdown}><Link to="#" ><span>Institucional</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown"onClick={handleNavlinkClick}><Link to="#" onClick={ScrollToTop}><span>Institucional</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li className="dropdown"onClick={toggleDropdown} ><Link to="#"><span>Nuestra Institución</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+              <li className="dropdown"onClick={toggleDropdown} ><Link to="#"onClick={ScrollToTop}><span>Nuestra Institución</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                 <ul>
-                  <li><Link to="/QuienesSomos" onClick={toggleDropdown}>Quienes Somos</Link></li>
-                  <li><Link to="/construccion" onClick={toggleDropdown}>Instituto de Innovación y Emprendimiento</Link></li>
+                  <li onClick={handleNavlinkClick}><Link to="/QuienesSomos"onClick={ScrollToTop} >Quienes Somos</Link></li>
+                  <li onClick={handleNavlinkClick}><Link to="/construccion"onClick={ScrollToTop} >Instituto de Innovación y Emprendimiento</Link></li>
 
                 </ul>
               </li>
 
-              <li><Link to="/Documentos" ><span>Documentos</span> </Link></li>
+              <li><Link to="/Documentos" onClick={ScrollToTop}><span>Documentos</span> </Link></li>
              
             </ul>
           </li>
 
-          <li className="dropdown" onClick={toggleDropdown} ><Link to="#"><span>Programas</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={toggleDropdown} ><Link to="#"onClick={ScrollToTop}><span>Programas</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Facultades</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+              <li className="dropdown" onClick={toggleDropdown}><Link to="#"onClick={ScrollToTop}><span>Facultades</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                 <ul>
-                  <li><Link to="/facultades/facultadIngenieria"onClick={toggleDropdown}>Facultad de Ingeniería</Link></li>
-                  <li><Link to="/facultades/facultadCienciasAdministrativas"onClick={toggleDropdown}>Facultad de Ciencias Administrativas</Link></li>
-                  <li><Link to="/facultades/facultadComunicacion"onClick={toggleDropdown}>Facultad de Comunicación, Arte y Marketing Digital</Link></li>
-                  <li><Link to="/facultades/facultadGastronomia"onClick={toggleDropdown}>Faculta de  de Gastronomía</Link></li>
-                  <li><Link to="/facultades/facultadCienciasJuridicas"onClick={toggleDropdown}>Facultad de ciencias juridicas</Link></li>
+                  <li onClick={toggleDropdown}><Link to="/facultades/facultadIngenieria" onClick={ScrollToTop}>Facultad de Ingeniería</Link></li>
+                  <li onClick={toggleDropdown}><Link to="/facultades/facultadCienciasAdministrativas"onClick={ScrollToTop}>Facultad de Ciencias Administrativas</Link></li>
+                  <li onClick={toggleDropdown}><Link to="/facultades/facultadComunicacion"onClick={ScrollToTop}>Facultad de Comunicación, Arte y Marketing Digital</Link></li>
+                  <li onClick={toggleDropdown}><Link to="/facultades/facultadGastronomia"onClick={ScrollToTop}>Faculta de  de Gastronomía</Link></li>
+                  <li onClick={toggleDropdown}><Link to="/facultades/facultadCienciasJuridicas"onClick={ScrollToTop}>Facultad de ciencias juridicas</Link></li>
                 </ul>
               </li>
-              <li><Link to="/posgrados">Posgrados</Link></li>
+              <li><Link to="/posgrados" onClick={ScrollToTop}>Posgrados</Link></li>
 
               <li className="dropdown" onClick={toggleDropdown} ><a href="https://unihorizonte.edu.co/educacion-continua/"><span>Educación Continuada</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
               
@@ -108,16 +117,16 @@ const Header = () => {
             </ul>
           </li>
 
-          <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Admisiones</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={toggleDropdown}><Link to="#" onClick={ScrollToTop}><span>Admisiones</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li><Link to="/construccion"onClick={toggleDropdown}>Proceso de Inscripción</Link></li>
-              <li><Link to="/construccion"onClick={toggleDropdown}>Financiamento</Link></li>
+              <li onClick={toggleDropdown}><Link to="/construccion" onClick={ScrollToTop}>Proceso de Inscripción</Link></li>
+              <li onClick={toggleDropdown}><Link to="/construccion" onClick={ScrollToTop}>Financiamento</Link></li>
             </ul>
           </li>
 
-          <li className="dropdown" onClick={toggleDropdown}><Link to="/construccion"><span>Proyección Social</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={toggleDropdown}><Link to="/construccion" onClick={ScrollToTop}><span>Proyección Social</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li className="dropdown" onClick={toggleDropdown}><Link to="/construccion"><span>Egresados</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+              <li className="dropdown" onClick={toggleDropdown}><Link to="/construccion" onClick={ScrollToTop}><span>Egresados</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                 <ul>
                   <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/egresados/"onClick={toggleDropdown}>Egresados</a></li>
                   <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/eventos-para-egresados/"onClick={toggleDropdown}>Noticias para Egresados</a></li>
@@ -127,7 +136,7 @@ const Header = () => {
             </ul>
           </li>
 
-          <li><Link to="/investigacion"><span>Investigación</span></Link>
+          <li><Link to="/investigacion"onClick={ScrollToTop}><span>Investigación</span></Link>
 </li>
 
           <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Bienestar</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>

@@ -46,7 +46,7 @@ const QuienesSomos = () => {
 
                         <h3>Visión</h3>
                         <div className="icon-box position-relative" data-aos="fade-up" data-aos-delay="100">
-                          <p>Unihorizonte será reconocida en el 2026 en el ámbito nacional e internacional, por la alta calidad académica e institucional, ofreciendo soluciones creativas e innovadoras a través de la formación empresarial como solución a las necesidades del sector productivo y de empleabilidad, contribuyendo al desarrollo de la felicidad de todos.</p>
+                          <p>La Fundación Universitaria Horizonte será reconocida en el 2026 en el ámbito nacional e internacional, por la alta calidad académica, ofreciendo soluciones creativas e innovadoras a través de las capacidades institucionales en las diferentes áreas del conocimiento, cuyo eje central es contribuir a la felicidad, el bilingüismo y la innovación de los integrantes de la comunidad académica. </p>
                         </div>
                       </div>
 
@@ -54,7 +54,7 @@ const QuienesSomos = () => {
                       <div className="col-lg-6 d-flex flex-column justify-content-center">
                         <h3>Misión</h3>
                         <div className="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
-                          <p>Impulsar y desarrollar la cultura emprendedora, las competencias y recursos de las personas y organizaciones para generar valor a la sociedad a través de la innovación, el ecosistema emprendedor y los procesos empresariales con el objetivo de ser un horizonte para el desarrollo de la felicidad de todos.</p>
+                          <p>La Fundación Universitaria Horizonte es una institución de educación superior que contribuye al desarrollo del país y al mejoramiento de la calidad de vida de sus habitantes, mediante los procesos de docencia, investigación y proyección social, propendiendo por el fomento del bilingüismo, la felicidad, la innovación, la tecnología y el emprendimiento, fundamentados en el modelo de desarrollo humano.</p>
                           </div>
                           </div>
                           </div>

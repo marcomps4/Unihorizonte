@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 export const FacultadesCard=({title, imgUrl, snies, semestre, link}) =>{
 
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: (0,0),
+      behavior: 'smooth',
+    });
+
+  return null;
+}
+
 
     return(
         
@@ -26,7 +35,7 @@ export const FacultadesCard=({title, imgUrl, snies, semestre, link}) =>{
                 </div>
   
   
-                <Link to={link} className="readmore stretched-link" ></Link>
+                <Link to={link} onClick={ScrollToTop} className="readmore stretched-link" ></Link>
   
               </div>
   

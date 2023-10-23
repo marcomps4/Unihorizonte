@@ -130,9 +130,10 @@ section {
   padding: 140px 0 200px 0;
   width: 100%;
   margin-top: 80px;
+  height: 70vh;
   position: relative;
   background-size: cover;
-  background-position: 50% 20%;
+  background-position: 50% 30%;
   background-repeat: no-repeat;
 }
 

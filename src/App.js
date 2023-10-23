@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './pages/Header';
 import Home from './pages/Home';
@@ -41,11 +41,9 @@ import Investigación from '../src/pages/Investigacion';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-
-  useEffect(() => {
-    console.log("useEffect ejecutado");
-    window.scrollTo(0, 0); // Mueve la página al principio cuando se carga
-  }, []);
+  
+  
+  
 
   return (
     <>
@@ -85,7 +83,8 @@ function App() {
       <Route path='/investigacion' element={<Investigación/>}/>
       <Route path='/construccion' element={<Construccion/>}/>
       <Route /*path='*' element={<Page404/>}*//>
-    </Routes>
+      
+    </Routes>  
     <Whatsapp/>
     <Footer/>
     </Router>

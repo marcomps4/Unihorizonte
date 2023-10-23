@@ -6,7 +6,7 @@ const Whatsapp = () => {
   const [scrollActive, setScrollActive] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 1) {
+    if (window.scrollY > 10) {
       setScrollActive(true);
     } else {
       setScrollActive(false);
