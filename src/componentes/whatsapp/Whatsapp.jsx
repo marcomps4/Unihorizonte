@@ -6,20 +6,14 @@ const Whatsapp = () => {
   const [scrollActive, setScrollActive] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 10) {
+    if (window.scrollY > 1) {
       setScrollActive(true);
     } else {
       setScrollActive(false);
     }
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-
-  };
+ 
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -34,7 +28,7 @@ const Whatsapp = () => {
     return(
         <a href="https://api.whatsapp.com/send?phone=573219208288&text=Hola,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20..." 
         className={`scroll-top ${scrollActive ? 'active' : ''}`}
-        onClick={scrollToTop} target="_blank"><img src={whatsapp} alt="whatsapp" name="whatsapp"/></a>
+        target="_blank"><img src={whatsapp} alt="whatsapp" name="whatsapp"/></a>
     )
 }
 

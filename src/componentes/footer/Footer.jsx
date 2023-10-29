@@ -4,6 +4,15 @@ import logo from "../../img/logo.png";
 import { Link } from "react-router-dom";
 
 const Footer = () =>{
+
+    const ScrollToTop = () => {
+     window.scrollTo({
+       top: (0,0),
+       behavior: 'smooth',
+     });
+ 
+   return null;
+ }
     return(
         <footer id="footer" className="footer">
 
@@ -20,12 +29,11 @@ const Footer = () =>{
 
               </p>
               <div className="social-links d-flex mt-3">
-                <Link to="/home" className="d-flex align-items-center justify-content-center"><i className="bi bi-twitter"></i></Link>
-                <Link to="#/" className="d-flex align-items-center justify-content-center"><i className="bi bi-facebook"></i></Link>
-                <Link to="#/" className="d-flex align-items-center justify-content-center"><i className="bi bi-instagram"></i></Link>
-                <Link to="#/" className="d-flex align-items-center justify-content-center"><i className="bi bi-linkedin"></i></Link>
-                <Link to="#/" className="d-flex align-items-center justify-content-center"><i className="bi bi-youtube"></i></Link>
-                <Link to="#/" className="d-flex align-items-center justify-content-center"><i className="bi bi-tiktok"></i></Link>
+                <Link to="https://www.facebook.com/fundacionunihorizonte/" target="_blank" className="d-flex align-items-center justify-content-center"><i className="bi bi-facebook"></i></Link>
+                <Link to="https://www.instagram.com/soyunihorizonte/" target="_blank" className="d-flex align-items-center justify-content-center"><i className="bi bi-instagram"></i></Link>
+                <Link to="https://www.linkedin.com/company/fundaci%C3%B3n-universitaria-horizonte/?viewAsMember=true" target="_blank" className="d-flex align-items-center justify-content-center"><i className="bi bi-linkedin"></i></Link>
+                <Link to="https://www.youtube.com/channel/UCpuBk9vtyzxsO44mnLfksNg" target="_blank" className="d-flex align-items-center justify-content-center"><i className="bi bi-youtube"></i></Link>
+                <Link to="https://www.tiktok.com/@soy_unihorizonte" target="_blank" className="d-flex align-items-center justify-content-center"><i className="bi bi-tiktok"></i></Link>
               </div>
             </div>
           </div>
@@ -33,31 +41,30 @@ const Footer = () =>{
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Mapa del sitio</h4>
             <ul>
-              <li><Link to="#/">Inicio</Link></li>
-              <li><Link to="#/">Faculatdes</Link></li>
-              <li><Link to="#/">Noticias y Eventos</Link></li>
-              <li><Link to="#/">Convenios</Link></li>
+              <li><a href="#inscripcion">Queremos conocerte</a></li>
+              <li><a href="#New">Noticias y Eventos</a></li>
+              <li><a href="#clients">Convenios</a></li>
             </ul>
           </div>
 
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Facultades</h4>
             <ul>
-              <li><Link to="#/">Ingenierías</Link></li>
-              <li><Link to="#/">Ciencias Administrativas</Link></li>
-              <li><Link to="#/">Comunicación, Arte y Marketing Digital</Link></li>
-              <li><Link to="#/">Gastronomía</Link></li>
-              <li><Link to="#/">Ciencias Jurídicas</Link></li>
+              <li><Link to="/facultades/facultadIngenieria" onClick={ScrollToTop}>Ingenierías</Link></li>
+              <li><Link to="/facultades/facultadCienciasAdministrativas" onClick={ScrollToTop}>Ciencias Administrativas</Link></li>
+              <li><Link to="/facultades/facultadComunicacion" onClick={ScrollToTop}>Comunicación, Arte y Marketing Digital</Link></li>
+              <li><Link to="/facultades/facultadGastronomia" onClick={ScrollToTop}>Gastronomía</Link></li>
+              <li><Link to="/facultades/facultadCienciasJuridicas" onClick={ScrollToTop}>Ciencias Jurídicas</Link></li>
+              <li><Link to="/posgrados" onClick={ScrollToTop}>Posgrados</Link></li>
             </ul>
           </div>
 
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Links de Importancia</h4>
             <ul>
-              <li><Link to="#/">Q10</Link></li>
-              <li><Link to="#/">Correo Unihorizonte</Link></li>
-              <li><Link to="#/">Servicios</Link></li>
-              <li><Link to="#/">Proceso de inscripción</Link></li>
+              <li><Link to="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">Q10</Link></li>
+              <li><Link to="https://account.live.com/tou/accrue?mkt=ES-ES&uiflavor=web&client_id=1E00004040979A&id=0&ru=https://login.live.com/oauth20_authorize.srf%3fuaid%3d21aee4df02a3478591e0f587bb8b13bb%26client_id%3d4765445b-32c6-49b0-83e6-1d93765276ca%26opid%3dC2C22A0D627F87E7%26mkt%3dES-ES%26opidt%3d1698518795" target="_blank">Correo Unihorizonte</Link></li>
+              <li><Link to="https://www.banco.scotiabankcolpatria.com/PagosElectronicos/AgreementCategory.aspx" target="_blank">Pagos por Pse</Link></li>
             </ul>
           </div>
 

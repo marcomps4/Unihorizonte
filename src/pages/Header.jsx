@@ -119,8 +119,8 @@ const Header = () => {
 
           <li className="dropdown" onClick={toggleDropdown}><Link to="#" onClick={ScrollToTop}><span>Admisiones</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li onClick={toggleDropdown}><Link to="/construccion" onClick={ScrollToTop}>Proceso de Inscripción</Link></li>
-              <li onClick={toggleDropdown}><Link to="/construccion" onClick={ScrollToTop}>Financiamento</Link></li>
+              <li onClick={toggleDropdown}><Link to="/Proceso_de_inscripcion" onClick={ScrollToTop}>Proceso de Inscripción</Link></li>
+              <li onClick={toggleDropdown}><Link to="/Financiamiento" onClick={ScrollToTop}>Financiamento</Link></li>
             </ul>
           </li>
 
@@ -139,10 +139,11 @@ const Header = () => {
           <li><Link to="/investigacion"onClick={ScrollToTop}><span>Investigación</span></Link>
 </li>
 
-          <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Bienestar</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Horizontista</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
               <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/bienestar/"onClick={toggleDropdown}>Bienestar Universitario</a></li>
               <li><a href="https://unihorizonte.edu.co/biblioteca/"onClick={toggleDropdown}>Biblioteca</a></li>
+              <li><Link to="/construccion" onClick={toggleDropdown}>Solicitudes Institucionales</Link></li>
             </ul>
           </li>
 

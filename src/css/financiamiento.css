@@ -1,0 +1,167 @@
+
+  /*--------------------------------------------------------------
+# financiamiento Section
+--------------------------------------------------------------*/
+
+  .financiamiento h2 {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    margin: 20px 0;
+    text-align: center;
+    color: var(--color-secondary);
+  }
+
+
+  .financiamiento .financiamiento_principal{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  @media (min-width: 991px) {
+    .financiamiento h2 {
+      margin: 60px 0 20px 0;
+    }
+  }
+  
+
+  .financiamiento .financiamiento-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    padding: 8px 37px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 0 auto;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    text-decoration: none;
+    width: 150px;
+  }
+  
+  .financiamiento .financiamiento-btn:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+  }
+
+  /*--------------------------------------------------------------
+# Financiamiento-info Section
+--------------------------------------------------------------*/
+.financiamiento-info .financiamiento-item {
+    box-shadow: 0 3px 20px -2px rgba(108, 117, 125, 0.15);
+    padding-bottom: 30px;
+    background: #fff;
+    height: 100%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .financiamiento-info h3 {
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 24px;
+    color: var(--color-secondary);
+  }
+  
+  .financiamiento-info h4 {
+    font-size: 18px;
+    color: var(--color-primary);
+    font-weight: 400;
+    font-family: var(--font-primary);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .financiamiento-info h4 sup {
+    font-size: 28px;
+  }
+  
+  .financiamiento-info h4 span {
+    color: rgba(108, 117, 125, 0.8);
+    font-size: 18px;
+  }
+
+  .financiamiento-logo{
+    width: 100%;
+    padding: 50px;
+  }
+  
+  .financiamiento-info ul {
+    padding: 20px 0;
+    list-style: none;
+    color: #6c757d;
+    text-align: left;
+    line-height: 20px;
+  }
+  
+  .financiamiento-info ul li {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .financiamiento-info ul i {
+    color: #059652;
+    font-size: 24px;
+    padding-right: 3px;
+  }
+  
+  .financiamiento-info ul .na {
+    color: rgba(108, 117, 125, 0.5);
+  }
+  
+  .financiamiento-info ul .na i {
+    color: rgba(108, 117, 125, 0.5);
+  }
+  
+  .financiamiento-info ul .na span {
+    text-decoration: line-through;
+  }
+  
+  .financiamiento-info .buy-btn {
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: var(--font-primary);
+    text-decoration: none;
+  }
+  
+  .financiamiento-info .buy-btn:hover {
+    background: #00376c;
+    border-color: #00376c;
+  }
+  
+  .financiamiento-info .featured {
+    background: var(--color-primary);
+  }
+  
+  .financiamiento-info .featured h3,
+  .financiamiento-info .featured h4,
+  .financiamiento-info .featured h4 span,
+  .financiamiento-info .featured ul,
+  .financiamiento-info .featured ul .na,
+  .financiamiento-info .featured ul i,
+  .financiamiento-info .featured ul .na i {
+    color: #fff;
+  }
+  
+  .financiamiento-info .featured .buy-btn {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  .financiamiento-info .featured .buy-btn:hover {
+    background: #fff;
+    color: var(--color-primary);
+  }
+  

@@ -8,6 +8,8 @@ import Footer from './componentes/footer/Footer';
 import Whatsapp from './componentes/whatsapp/Whatsapp';
 import QuienesSomos from './pages/QuienesSomos';
 import Documentos from './pages/Documentos';
+import ProcesoInscripcion from './pages/Proceso_Inscripcion';
+import Financiamiento from './pages/Financiamiento';
 import FacultadIngenieria from './pages/Facultad_Ingenieria'
 import FacultadCienciasAdministrativas from './pages/Facultad_ciencias_administrativas';
 import FacultadComunicacion from './pages/Facultad_comunicacion';
@@ -36,11 +38,20 @@ import EspGerenCalidad from '../src/pages/programas/Posgrados/EspGerenciaCalidad
 import EspGerenciaProyectos from '../src/pages/programas/Posgrados/EspGerenciaProyectos';
 import EspAva from '../src/pages/programas/Posgrados/EspAva';
 import Investigación from '../src/pages/Investigacion';
- import Construccion from '../src/pages/Construccion'
+import Construccion from '../src/pages/Construccion'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+
+   const ScrollToTop = () => {
+    window.scrollTo({
+      top: (0,0),
+      behavior: 'smooth',
+    });
+
+  return null;
+}
   
   
   
@@ -48,11 +59,14 @@ function App() {
   return (
     <>
     <Router>
+      <ScrollToTop/>
       <Header/>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/Quienessomos' element={<QuienesSomos/>}/>
       <Route path='/Documentos' element={<Documentos/>}/>
+      <Route path='/Proceso_de_inscripcion' element={<ProcesoInscripcion/>}/>
+      <Route path='/Financiamiento' element={<Financiamiento/>}/>
       <Route path='/facultades/facultadIngenieria' element={<FacultadIngenieria/>}/>
       <Route path='/facultades/facultadCienciasAdministrativas' element={<FacultadCienciasAdministrativas/>}/>
       <Route path='/facultades/facultadComunicacion' element={<FacultadComunicacion/>}/>

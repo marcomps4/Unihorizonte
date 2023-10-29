@@ -24,7 +24,7 @@ const Carouselh = () =>{
           </Carousel.Item>
 
         <Carousel.Item>
-        <a href="https://unihorizonte.edu.co/consulta-tus-horarios-2023-2/"><img src={img2} alt="" text="First slide" className="img-fliud" target="_blank" /></a>
+        <a href="https://unihorizonte.edu.co/consulta-tus-horarios-2023-2/" target="_blank"><img src={img2} alt="" text="First slide" className="img-fliud" target="_blank" /></a>
         </Carousel.Item>
 
         <Carousel.Item>
@@ -32,11 +32,7 @@ const Carouselh = () =>{
         </Carousel.Item>
 
         <Carousel.Item>
-        <img src={img4} alt="" text="First slide" className="img-fliud" />
-        </Carousel.Item>
-
-        <Carousel.Item>
-        <img src={img5} alt="" text="First slide" />
+        <a href="http://virtual.unihorizonte.edu.co:8090/Alejandria/" target="_blank"><img src={img5} alt="" text="First slide" /></a>
         </Carousel.Item>
       </Carousel>
     )

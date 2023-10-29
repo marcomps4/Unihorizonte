@@ -8,8 +8,8 @@ import documpia from '../../src/documentos/formato_PIA_2023_VF.docx';
 import prueba from '../img/investigacion/inves1.jpg';
 import prueba1 from '../img/investigacion/invest2.jpg';
 import prueba2 from '../img/investigacion/invest3.jpg';
-import prueba4 from '../img/investigacion/invest5.jpg';
-import prueba5 from '../img/investigacion/invest6.jpg';
+import prueba4 from '../img/investigacion/galeri3.jpeg';
+import prueba5 from '../img/investigacion/galeri6.jpg';
 import prueba6 from '../img/investigacion/invest7.jpg';
 import prueba7 from '../img/investigacion/invest8.jpg';
 import logoImg from '../img/investigacion/logo_gcena.svg';
@@ -19,6 +19,7 @@ import logoImg5 from '../img/investigacion/logo_vertice.svg';
 import logoImg6 from '../img/investigacion/logo-tech.svg';
 import {CardInvestigacion} from '../componentes/investigacion/CardInvestigacion';
 import {GrDocumentDownload} from "react-icons/gr";
+import {GiVideoConference} from "react-icons/gi"
 import {Galeria} from "../componentes/investigacion/Gallery";
 
 
@@ -191,7 +192,7 @@ const Investigación = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Sesiones de acompañamiento CLEO</td>
+                    <td>Sesiones de acompañamiento  </td>
                     <td>30 de octubre – 15 de noviembre de 2023</td>
                   </tr>
                   <tr>
@@ -226,6 +227,8 @@ const Investigación = () => {
           <div className=" d-flex justify-content-center">
           <a href={documpia}><i><GrDocumentDownload/></i>
           <p>Poster pia</p></a>
+          <a href="https://outlook.office365.com/owa/calendar/AsesoraspostersPIAS@unihorizonte.edu.co/bookings/" target="_blank"><i><GiVideoConference/></i>
+          <p>Sesiones de acompañamiento</p></a>
           </div>
         </div>
         </div>

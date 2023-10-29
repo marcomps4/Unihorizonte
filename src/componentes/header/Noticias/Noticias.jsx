@@ -37,7 +37,7 @@ const Noticias = ()=>{
   ];
     return(
       
-        <section className="New">
+        <section id="New"className="New">
           <div className="container" data-aos="fade-up" data-aos-delay="100">
 
             <div className="section-header">

@@ -5,7 +5,13 @@ import 'swiper/css/bundle';
 import '../investigacion/gallery.css';
 import imgGalery1 from '../../img/investigacion/galeri1.jpeg';
 import imgGalery2 from '../../img/investigacion/galeri2.jpeg';
-import imgGalery3 from '../../img/investigacion/galeri3.jpeg';
+import imgGalery4 from '../../img/investigacion/galeri4.JPG';
+import imgGalery5 from '../../img/investigacion/galeri5.JPG';
+import imgGalery7 from '../../img/investigacion/galeri7.JPG';
+import imgGalery8 from '../../img/investigacion/galeri8.JPG';
+import imgGalery9 from '../../img/investigacion/galeri9.jpg';
+import imgGalery10 from '../../img/investigacion/galeri10.JPG';
+import imgGalery11 from '../../img/investigacion/galeri11.JPG';
 import {TfiArrowCircleLeft} from "react-icons/tfi";
 import {TfiArrowCircleRight} from "react-icons/tfi";
 
@@ -39,10 +45,14 @@ export const Galeria = () => {
     >
       <SwiperSlide><img src={imgGalery1}/></SwiperSlide>
       <SwiperSlide><img src={imgGalery2}/></SwiperSlide>
-      <SwiperSlide><img src={imgGalery3}/></SwiperSlide>
-      <SwiperSlide><img src={imgGalery2}/></SwiperSlide>
-      <SwiperSlide><img src={imgGalery1}/></SwiperSlide>
-      <SwiperSlide><img src={imgGalery3}/></SwiperSlide>
+      <SwiperSlide><img src={imgGalery4}/></SwiperSlide>
+      <SwiperSlide><img src={imgGalery5}/></SwiperSlide>
+      <SwiperSlide><img src={imgGalery7}/></SwiperSlide>
+      <SwiperSlide><img src={imgGalery8}/></SwiperSlide>
+      <SwiperSlide><img src={imgGalery9}/></SwiperSlide>
+      <SwiperSlide><img src={imgGalery10}/></SwiperSlide>
+      <SwiperSlide><img src={imgGalery11}/></SwiperSlide>
+
 
       <div className="slider-controler">
        <div className='swiper-button-prev slider-arrow'>

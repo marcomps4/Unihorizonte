@@ -1,16 +1,29 @@
 /*--------------------------------------------------------------
 # inscripcion Section
 --------------------------------------------------------------*/
-.inscripcion h2 {
+.inscripcion .contenido h2 {
   font-size: 32px;
   font-weight: 700;
   font-family: var(--font-secondary);
   margin: 30px 0;
-  columns: #2e3135;
+  color: var(--color-secondary);
+}
+
+.inscripcion .contenido h2::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--color-primary);
+  left:0;
+  top: 10;
+
+
 }
 
 @media (min-width: 991px) {
-  .inscripcion h2 {
+  .inscripcion .contenido h2 {
     /*max-width: 65%;*/
     margin: 0 0 80px 0;
   }
@@ -51,19 +64,30 @@
   color: var(--color-primary);
 }
 
-
 .inscripcion .inscripcion-img {
-  min-height: 600px;
+
   background-size: cover;
   background-position: center;
+
+}
+
+
+
+@media (max-width: 991px) {
+.inscripcion .inscripcion-img {
+  min-height: 500px;
+  background-image: url(../../../img/cursos/banner-prei-01.jpg);
+}
 }
 
 @media (min-width: 992px) {
   .inscripcion .inscripcion-img {
+    min-height: 600px;
+    background-image: url(../../../img/cursos/banner-prei-02.jpg);
     position: absolute;
     top: 0;
     right: 0;
   }
 }
-  
+ 
   

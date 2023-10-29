@@ -10,12 +10,14 @@ const Inscripcion = () =>{
 
       <div className="row position-relative">
 
-      <a href="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank"><div className="col-lg-7 inscripcion-img" style={{backgroundImage:`url(${bannerpre})`}}>
+      <a href="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">
+        <div className="col-lg-7 inscripcion-img">
+          <div style={{backgroundImage:`url(${bannerpre})`}}></div>
       </div>
         </a>
         
 
-        <div className="col-lg-7">
+        <div className="col-lg-7 contenido">
           <h2>Queremos conocerte</h2>
           <div className="our-story">
             <p>¡Prepárate para un emocionante viaje educativo en la U de la felicidad, el emprendimiento, la tecnología y la innovación! Completa el siguiente formulario de preinscripción, y pronto te contactaremos.</p>
