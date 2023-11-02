@@ -149,7 +149,7 @@ const Header = () => {
 
           <li ><a href="https://campusvirtual.unihorizonte.edu.co/f70d2d351209d4ccee0099b992b51a53/campus/index.html" target="_blank" >Campus Virtual</a></li>
 
-          <li ><Link to="/construccion" target="_blank">Q10</Link></li>
+          <li ><Link to="/construccion" target="_blank">Sistema Académico</Link></li>
           
           
 

@@ -142,5 +142,9 @@
   @media (max-width: 768px) {
     .pia-descarga{
       flex-direction: column;
+      margin-left: 20px;
+    }
+    .pia-descarga-item{
+      flex-direction: column;
     }
   }

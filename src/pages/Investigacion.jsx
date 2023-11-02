@@ -4,7 +4,9 @@ import bannercadmon from '../../src/img/investigacion/banner.jpg';
 import revista1 from '../img/investigacion/styllus.png';
 import logopia from '../img/investigacion/logo_pias.png';
 import revistapdf1 from '../../src/documentos/revista_stylus.pdf';
-import documpia from '../../src/documentos/formato_PIA_2023_VF.docx';
+import documpia from '../../src/documentos/investigacion/formato_PIA_2023_VF.docx';
+import docuproyinvesti from '../../src/documentos/investigacion/4_F-165 PROYECTO INVESTIGACION_VF.docx';
+import docuanteproyecto from '../../src/documentos/investigacion/3_F-051 ANTEPROYECTO_VF.doc';
 import prueba from '../img/investigacion/inves1.jpg';
 import prueba1 from '../img/investigacion/invest2.jpg';
 import prueba2 from '../img/investigacion/invest3.jpg';
@@ -17,6 +19,10 @@ import logoImg1 from '../img/investigacion/logo-sisom.svg';
 import logoImg4 from '../img/investigacion/logo-gastro.svg';
 import logoImg5 from '../img/investigacion/logo_vertice.svg';
 import logoImg6 from '../img/investigacion/logo-tech.svg';
+import logoImg7 from '../img/investigacion/logo_dione.svg';
+import info1 from '../img/investigacion/infografia_proyecto_de_grado.jpg';
+import info2 from '../img/investigacion/infografia-01.jpg';
+import info3 from '../img/investigacion/infografia-02.jpg';
 import {CardInvestigacion} from '../componentes/investigacion/CardInvestigacion';
 import {GrDocumentDownload} from "react-icons/gr";
 import {GiVideoConference} from "react-icons/gi"
@@ -46,7 +52,7 @@ const Investigación = () => {
     },
     {
       title: "Grupo de Investigación DIONE",
-      imgUrl: logoImg,
+      imgUrl: logoImg7,
       imgback: prueba,
       categoria: "COL0202304",
       depto: "Facultad de Ciencias Administrativas",
@@ -82,7 +88,7 @@ const Investigación = () => {
     },
     {
       title: "Grupo de Investigación NANSHE",
-      imgUrl: logoImg,
+      imgUrl: "",
       imgback: prueba7,
       categoria: "COL0233982",
       depto: "Facultad de Ciencias Jurídicas",
@@ -111,6 +117,18 @@ const Investigación = () => {
           En la Fundación Universitaria Horizonte la investigación se constituye como fuente de saber, generadora y soporte del ejercicio docente, que como propósito principal tiene la producción y validación de nuevo conocimiento para impulsar el desarrollo académico, científico, tecnológico, cultural y social del país. Para lograr este fin, el Proyecto Educativo Institucional (PEI) de la fundación Universitaria Horizonte propone desde la óptica de la investigación, “una universidad comprometida con la cultura investigativa, el pensamiento científico y tecnológico” a través de un modelo pedagógico de desarrollo humano, que está orientado a “visibilizar el conocimiento y los actores que se encuentran tras las huellas de este.”
           </p>
         </div>
+
+        <div className="container d-flex">
+
+<div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
+    <img src={info1} className="img-fluid revistas" alt=""/>
+  </div>
+
+  <div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
+    <img src={info2} className="img-fluid revistas" alt=""/>
+    <img src={info3} className="img-fluid revistas" alt=""/>
+  </div>
+  </div>
 
 
         <div className="row gy-5">
@@ -219,14 +237,22 @@ const Investigación = () => {
         
         
         <div className=" container col-lg-12 col-sm-12 align-items-center justify-content-center">
-        <div className="pia-descarga">
-          <div className=" d-flex justify-content-center ">
+        <div className="pia-descarga ">
+
+          <div className="pia-descarga-item d-flex justify-content-center ">
           <a href={documpia}><i><GrDocumentDownload/></i>
           <p>Archivo pia</p></a>
-          </div>
-          <div className=" d-flex justify-content-center">
           <a href={documpia}><i><GrDocumentDownload/></i>
           <p>Poster pia</p></a>
+          </div>
+
+          <div className="pia-descarga-item d-flex justify-content-center">
+          <a href={docuproyinvesti}><i><GrDocumentDownload/></i>
+          <p>formato proyecto de investigación</p></a>
+          <a href={docuanteproyecto}><i><GrDocumentDownload/></i>
+          <p>formato de anteproyecto</p></a>
+          </div>
+          <div className="pia-descarga-item d-flex justify-content-center">
           <a href="https://outlook.office365.com/owa/calendar/AsesoraspostersPIAS@unihorizonte.edu.co/bookings/" target="_blank"><i><GiVideoConference/></i>
           <p>Sesiones de acompañamiento</p></a>
           </div>
