@@ -39,7 +39,7 @@ const Footer = () =>{
           </div>
 
           <div className="col-lg-2 col-md-3 footer-links">
-            <h4>Mapa del sitio</h4>
+            <h4>Inicio</h4>
             <ul>
               <li><a href="#inscripcion">Queremos conocerte</a></li>
               <li><a href="#New">Noticias y Eventos</a></li>
@@ -62,8 +62,8 @@ const Footer = () =>{
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Links de Importancia</h4>
             <ul>
-              <li><Link to="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">Q10</Link></li>
-              <li><Link to="https://account.live.com/tou/accrue?mkt=ES-ES&uiflavor=web&client_id=1E00004040979A&id=0&ru=https://login.live.com/oauth20_authorize.srf%3fuaid%3d21aee4df02a3478591e0f587bb8b13bb%26client_id%3d4765445b-32c6-49b0-83e6-1d93765276ca%26opid%3dC2C22A0D627F87E7%26mkt%3dES-ES%26opidt%3d1698518795" target="_blank">Correo Unihorizonte</Link></li>
+              <li><Link to="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">Sistema Académico</Link></li>
+              <li><Link to="https://login.microsoftonline.com/" target="_blank">Correo Unihorizonte</Link></li>
               <li><Link to="https://www.banco.scotiabankcolpatria.com/PagosElectronicos/AgreementCategory.aspx" target="_blank">Pagos por Pse</Link></li>
             </ul>
           </div>

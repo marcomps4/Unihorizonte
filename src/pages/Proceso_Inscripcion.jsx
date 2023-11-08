@@ -1,7 +1,8 @@
 import React from "react";
 import ins1 from '../../src/img/inscripcion/inscripcion_1.png';
 import ins2 from '../../src/img/inscripcion/inscripcion_2.png';
-import '../css/inscripcion.css'
+import '../css/inscripcion.css';
+import pdfinfluencer from '../../src/documentos/Plan_Influencer2023_1.pdf';
 
 const ProcesoInscripcion = () =>{
 
@@ -31,7 +32,7 @@ const ProcesoInscripcion = () =>{
               <div>
                 <h4>Formulario de Inscripción</h4>
                 <p>Haz clic en el siguente boton y llena TODO el formulario.</p>
-                <a className="proceso-btn" href="http://virtual.unihorizonte.edu.co:8090/Inscripciones/" target="_blank">Formulario de inscripción</a>
+                <a className="proceso-btn" href="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">Formulario de inscripción</a>
               </div>
             </div>
 
@@ -94,7 +95,7 @@ const ProcesoInscripcion = () =>{
                 <h4>Plan Influencer 2023-1</h4>
                 <p>Comparte tu experiencia con familiares, compañeros de trabajo o amigos y recibe incentivos por matrícula efectiva de tus referidos.</p>
 
-                <p>Consulta <a href="assets/documentos/Plan_Influencer2023_1.pdf" target="_blank">aquí</a> términos y condiciones del programa (documento original firmado).</p>
+                <p>Consulta <a href={pdfinfluencer} target="_blank">aquí</a> términos y condiciones del programa (documento original firmado).</p>
               </div>
             </div>
 
