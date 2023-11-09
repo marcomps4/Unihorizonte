@@ -17,7 +17,7 @@
   height: 4px;
   background-color: var(--color-primary);
   left:0;
-  top: 10;
+  top: 10px;
 
 
 }
@@ -36,7 +36,8 @@
 
 @media (min-width: 991px) {
   .inscripcion .our-story {
-    padding-right: 35%;
+    padding-right: 32%;
+    text-align: justify;
   }
 }
 
