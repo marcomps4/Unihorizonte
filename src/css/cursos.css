@@ -190,20 +190,20 @@
     margin-bottom: 50px;
 }
 
-.nav-link{
+.pasos .nav-link{
     color: var(--color-secondary);
     padding: 20px 20px;
     font-size: 18px;
     
     
 }
-.nav-link:hover{
+.pasos .nav-link:hover{
     color: #00376c;
     background-color: #e6e6e6;
     
 }
 
-.nav-pills .nav-link.active {
+.pasos .nav-pills .nav-link.active {
     background-color:#fff;
     color: var(--color-secondary);
     padding: 20px 20px;
@@ -212,17 +212,17 @@
     
 }
 
-.tab-content{
+.pasos .tab-content{
     height: 100%;
 }
 
-.tab-content h3{
+.pasos .tab-content h3{
     font-weight: 700;
     color: var(--color-secondary);
     margin-bottom: 30px;
 }
 
-.tab-content>.active {
+.pasos .tab-content>.active {
     background-color: #fff;
     padding: 50px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
@@ -230,12 +230,12 @@
 }
 
 @media (min-width: 374px) {
-  .nav-link, .nav-pills .nav-link.active{
+  .pasos .nav-link, .nav-pills .nav-link.active{
     text-align: center;
 
   }
 
-  .tab-content{
+  .pasos .tab-content{
     margin-top: 30px;
   }
 }

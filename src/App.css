@@ -446,6 +446,7 @@ section {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+    overflow: hidden;
   }
 
   .nav_bar a,
@@ -483,9 +484,10 @@ section {
     position: static;
     display: none;
     padding: 10px 0;
-    margin: 10px 20px;
+    margin: 10px 10px;
     transition: all 0.5s ease-in-out;
     /*border: 1px solid #222428;*/
+    overflow: hidden;
   }
 
   .nav_bar .dropdown>.dropdown-active,

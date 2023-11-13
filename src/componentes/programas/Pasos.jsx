@@ -12,7 +12,7 @@ const Pasos = () =>{
 <section id="pasos" className="pasos">
       <div className="container" data-aos="zoom-out">
 
-        <div className="row g-5">
+        <div className="row gy-5">
 
           <div className="col-lg-8 col-md-6 content d-flex flex-column order-last order-md-first">
             <h3>Realiza tu proceso de admisión en 3 pasos</h3>

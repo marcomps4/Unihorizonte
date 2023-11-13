@@ -36,11 +36,13 @@ const Header = () => {
   const toggleDropdown = (event) => {
     if (isMobileNavActive) {
       event.preventDefault();
+      event.stopPropagation(); // Detener la propagación del evento
+  
       const targetElement = event.target;
       const nextElement = targetElement.nextElementSibling;
       const dropDownIndicator = targetElement.querySelector('.dropdown-indicator');
-
-      if  (targetElement && nextElement && dropDownIndicator) {
+  
+      if (targetElement && nextElement && dropDownIndicator) {
         targetElement.classList.toggle('active');
         nextElement.classList.toggle('dropdown-active');
         dropDownIndicator.classList.toggle('bi-chevron-up');
@@ -77,7 +79,7 @@ const Header = () => {
       <nav id="nav_bar" className="nav_bar"> 
       
         <ul>
-          <li className="dropdown"onClick={toggleDropdown}><Link to="#" onClick={ScrollToTop}><span>Institucional</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
+          <li className="dropdown"onClick={toggleDropdown}><Link to="#" onClick={ScrollToTop} ><span>Institucional</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
               <li className="dropdown"onClick={toggleDropdown} ><Link to="#"onClick={ScrollToTop}><span>Nuestra Institución</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                 <ul>
@@ -105,10 +107,10 @@ const Header = () => {
               </li>
               <li onClick={handleNavlinkClick}><Link to="/posgrados" onClick={ScrollToTop}>Posgrados</Link></li>
 
-              <li className="dropdown" onClick={toggleDropdown} ><a href="https://unihorizonte.edu.co/educacion-continua/"><span>Educación Continuada</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li className="dropdown" onClick={toggleDropdown} ><Link to=""><span>Educación Continuada</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
               
                 <ul>
-                  <li><a href="https://unihorizonte.edu.co/educacion-continua/" onClick={handleNavlinkClick}>Diplomados - Cursos</a></li>
+                  <li onClick={ScrollToTop}><Link to="/educacionContinua" onClick={handleNavlinkClick}>Diplomados - Cursos</Link></li>
                   <li><a href="http://campus.unihorizonte.edu.co/certificados/"onClick={handleNavlinkClick}>Certificados de educación Continua</a></li>
                 </ul>
               </li>
