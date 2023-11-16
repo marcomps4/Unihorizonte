@@ -24,7 +24,7 @@ const TecGestionTalentoHumano =() => {
           Ciudad: "Bogotá",
           Snies: "109382",
           Registro: "8224",
-          Matricula: "$2.985.300",
+          Matricula: "$2.627.050",
           planEstudio: planeTecGestiontalHumano,
           videoFondo: gastrocurse,
           Video: "https://www.youtube.com/embed/LXb3EKWsInQ",

@@ -24,7 +24,7 @@ const IngSiho =() => {
           Ciudad: "Bogotá",
           Snies: "104564",
           Registro: "07596",
-          Matricula: "$7.792.600",
+          Matricula: "$4.792.600",
           planEstudio: planeIngSiho,
           videoFondo: gastrocurse,
           Video: "https://www.youtube.com/embed/LXb3EKWsInQ",

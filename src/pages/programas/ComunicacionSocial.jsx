@@ -24,7 +24,7 @@ const ComunicacionSocial =() => {
           Ciudad: "Bogotá",
           Snies: "107917",
           Registro: "",
-          Matricula: "$5.396.050",
+          Matricula: "$4.933.600",
           planEstudio: planeComSocial,
           videoFondo: gastrocurse,
           Video: "https://www.youtube.com/embed/LXb3EKWsInQ",

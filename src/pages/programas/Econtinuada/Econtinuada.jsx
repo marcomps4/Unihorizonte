@@ -26,6 +26,7 @@ import diplomado6 from '../../../img/econtinuada/diplomados/analisis_contratacio
 import diplomado7 from '../../../img/econtinuada/diplomados/restauracion_ambiental.jpg';
 import taller1 from '../../../img/econtinuada/talleres/cubrimiento_de_eventos_deportivos.jpg';
 import taller2 from '../../../img/econtinuada/talleres/tecnicas_basicas_de_ilustración.png';
+import taller3 from '../../../img/econtinuada/talleres/taller_de_la_felicidad.jpg';
 
 
 
@@ -164,10 +165,10 @@ const EducacionContinua = () =>{
             link:"https://biz.payulatam.com/L0ce7168B508742",
         },
         {
-            title: "Técnicas Básicas de Ilustración",
-            imgContinua: taller2,
-            link:"https://biz.payulatam.com/L0ce7163B339419",
-        },
+          title: "Taller de la Felicidad",
+          imgContinua: taller3,
+          link:"https://biz.payulatam.com/L0ce7163B339419",
+      },
     ]
 
     return(

@@ -1,9 +1,9 @@
 import React from "react";
 import '../Noticias/noticias.css'
 import {CardNoticias} from "../Noticias/NoticiasCard"
-import noticia1 from '../../../img/Noticias/new_1.jpeg'
-import noticia2 from '../../../img/Noticias/new_2.jpeg'
-import noticia3 from '../../../img/Noticias/new_3.jpeg'
+import noticia1 from '../../../img/Noticias/new_1.jpg'
+import noticia2 from '../../../img/Noticias/new_2.jpg'
+import noticia3 from '../../../img/Noticias/new_3.jpg'
 
 
 
@@ -12,26 +12,29 @@ const Noticias = ()=>{
 
   const noticias = [
     {
-      title: "La Gamificación: un ejemplo aprendiendo Inglés",
+      id: 1,
+      title: "El eje de la felicidad se refuerza Horizonte en la Fundación Universitaria con los nuevos torniquetes – ¡sino sonríes no entras!",
       imgUrl: noticia1,
-      fecha: "MAYO 10,2023",
-      nombre: "Diana Patricia Camargo Ramírez",
-      resumen: "Un concepto fundamental que se debe entender para hacer gamificación es la importancia de mantener el interés o de forma más clara la importancia de mantener la motivación."
+      fecha: "NOVIEMBRE 7,2023",
+      nombre: "Ingeniera Diana Patricia Camargo Ramírez (Rectora) / Ingeniero Nicolai Cárdenas Pulido (Director Tic)",
+      resumen: ""
 
     },
     {
-      title: "Reflexión de los TDS y su importancia en el café de especialidad",
+      id: 2,
+      title: "Las Emociones de los Alimentos: Un Viaje Desde el Placer al Significado",
       imgUrl: noticia2,
-      fecha: "MAYO 3,2023",
-      nombre: "Lissete Johana Bolívar Buitrago",
-      resumen: "Dentro de la Industria del café de especialidad siempre te vas a encontrar con el cuestionamiento de los porcentajes de extracción y TDS en donde todo se vuelve subjetivo y cada persona tiene una idea diferente acerca de estos temas. "
+      fecha: "OCTUBRE 24,2023",
+      nombre: "Edy Mayerly González Cañon",
+      resumen: "La relación entre los alimentos y las emociones son una dimensión profundamente arraigada de la experiencia humana... "
     },
     {
-      title: "Autorregulación e inteligencia",
+      id: 3,
+      title: "Análisis de texto y lecturas en estudiantes universitarios: Explorando las causas de la falta de gusto",
       imgUrl: noticia3,
-      fecha: "MAYO 2,2023",
-      nombre: "Unihorizonte",
-      resumen: "La autorregulación es la capacidad de los individuos para modificar su conducta en virtud de las demandas de situaciones específicas."
+      fecha: "OCTUBRE 9,2023",
+      nombre: "Neftis Leyton Ramírez, docente investigador Grupo de Investigación GICENA",
+      resumen: ""
     },
     
   ];

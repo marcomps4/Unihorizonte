@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export const CardNoticias=({title,imgUrl,fecha,nombre,resumen}) =>{
     return(
@@ -12,11 +12,12 @@ export const CardNoticias=({title,imgUrl,fecha,nombre,resumen}) =>{
     
                   <div className="post-content d-flex flex-column">
     
-                    <h3 className="post-title">{title}</h3>
+                   <Link to=""><h3 className="post-title">{title}</h3></Link>
     
                     <div className="meta d-flex align-items-center">
-                      <div className="d-flex align-items-center">
+                      <div className="d-flex ">
                         <i className="bi bi-person"></i> <span className="ps-2">{nombre}</span>
+                        
                       </div>
 
                     </div>

@@ -10,7 +10,7 @@ const Inscripcion = () =>{
 
       <div className="row position-relative">
 
-      <a href="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">
+      <a href="https://site2.q10.com/SolicitudesInstitucionales/NuevaSolicitud?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">
         <div className="col-lg-7 inscripcion-img">
           <div style={{backgroundImage:`url(${bannerpre})`}}></div>
       </div>

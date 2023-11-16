@@ -24,7 +24,7 @@ const EspAva =() => {
           Ciudad: "Bogotá",
           Snies: "110606",
           Registro: "12973",
-          Matricula: "$7.761.850",
+          Matricula: "$5.867.950",
           planEstudio: planeEspAva,
           videoFondo: gastrocurse,
           Video: "https://www.youtube.com/embed/LXb3EKWsInQ",

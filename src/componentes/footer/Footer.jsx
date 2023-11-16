@@ -62,7 +62,7 @@ const Footer = () =>{
           <div className="col-lg-2 col-md-3 footer-links">
             <h4>Links de Importancia</h4>
             <ul>
-              <li><Link to="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">Sistema Académico</Link></li>
+              <li><Link to="https://fuh.q10.com/" target="_blank">Sistema Académico</Link></li>
               <li><Link to="https://login.microsoftonline.com/" target="_blank">Correo Unihorizonte</Link></li>
               <li><Link to="https://www.banco.scotiabankcolpatria.com/PagosElectronicos/AgreementCategory.aspx" target="_blank">Pagos por Pse</Link></li>
             </ul>

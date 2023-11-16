@@ -150,7 +150,7 @@ const Header = () => {
 
           <li onClick={handleNavlinkClick} ><a href="https://campusvirtual.unihorizonte.edu.co/063cb562cbf68c0b7733db2b308490ea03c37370/" target="_blank" >Campus Virtual</a></li>
 
-          <li onClick={handleNavlinkClick} ><Link to="https://site2.q10.com/Preinscripcion?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" target="_blank">Sistema Académico</Link></li>
+          <li onClick={handleNavlinkClick} ><Link to="https://fuh.q10.com/" target="_blank">Sistema Académico</Link></li>
           
           
 
