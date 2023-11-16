@@ -22,10 +22,12 @@ import cursos16 from '../../../img/econtinuada/cursos/modelado_3d.jpg';
 import diplomado1 from '../../../img/econtinuada/diplomados/pmbok.png';
 import diplomado2 from '../../../img/econtinuada/diplomados/diplomado_mercado_financiero_y_de_valores.png';
 import diplomado3 from '../../../img/econtinuada/diplomados/diplomado_analisis_de_insolvencia.png';
+import diplomado4 from '../../../img/econtinuada/diplomados/diplomado_dulce.jpg';
+import diplomado5 from '../../../img/econtinuada/diplomados/Diplomado_ISO_45001.png';
 import diplomado6 from '../../../img/econtinuada/diplomados/analisis_contratacion_estatal.png';
 import diplomado7 from '../../../img/econtinuada/diplomados/restauracion_ambiental.jpg';
 import taller1 from '../../../img/econtinuada/talleres/cubrimiento_de_eventos_deportivos.jpg';
-import taller2 from '../../../img/econtinuada/talleres/tecnicas_basicas_de_ilustración.png';
+import taller2 from '../../../img/econtinuada/talleres/tecnicas_basicas_de_ilustracion.png';
 import taller3 from '../../../img/econtinuada/talleres/taller_de_la_felicidad.jpg';
 
 
@@ -132,13 +134,13 @@ const EducacionContinua = () =>{
             link:"https://biz.payulatam.com/L0ce716E15152E9",
         },
         {
-            title: "Diplomado en Análisis de Insolvencia",
-            imgContinua: diplomado3,
+            title: "Diplomado en tendencias y creatividad del mundo dulce",
+            imgContinua: diplomado4,
             link:"https://biz.payulatam.com/L0ce71672165ABB",
         },
         {
-            title: "Diplomado  en Análisis de Insolvencia",
-            imgContinua: diplomado3,
+            title: "Diplomado implementación ISO 45001",
+            imgContinua: diplomado5,
             link:"https://biz.payulatam.com/L0ce7166E31381C",
         },
         {
