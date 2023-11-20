@@ -144,7 +144,7 @@ const Header = () => {
             <ul>
               <li onClick={handleNavlinkClick}><a href="https://unihorizonte.edu.co/soy-unihorizontista/bienestar/"onClick={toggleDropdown}>Bienestar Universitario</a></li>
               <li onClick={handleNavlinkClick}><a href="https://unihorizonte.edu.co/biblioteca/"onClick={toggleDropdown}>Biblioteca</a></li>
-              <li onClick={handleNavlinkClick}><Link to="/construccion" onClick={toggleDropdown}>Solicitudes Institucionales</Link></li>
+              <li onClick={handleNavlinkClick}><a href="https://site2.q10.com/SolicitudesInstitucionales/NuevaSolicitud?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" onClick={toggleDropdown} target='_blank'>Solicitudes Institucionales</a></li>
             </ul>
           </li>
 

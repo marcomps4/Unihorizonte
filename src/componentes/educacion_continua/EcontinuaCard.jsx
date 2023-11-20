@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { useModal } from "../../hook/useModal";
+import Modal  from "../Modal";
+import ContactForm from '../../componentes/educacion_continua/formulario/Contactenos'
 
 export const EcontinuaCard=({title, imgContinua, link}) =>{
 
@@ -9,7 +12,10 @@ export const EcontinuaCard=({title, imgContinua, link}) =>{
     });
 
   return null;
-}
+};
+
+  //Modal
+  const[isOpenModalForm, openModalForm, closeModalForm] = useModal(false);
 
 
     return(
@@ -28,7 +34,13 @@ export const EcontinuaCard=({title, imgContinua, link}) =>{
                 </div>
   
                 <div className="econtinuada-btn meta d-flex ">
-
+                  <Modal
+                  isOpen = {isOpenModalForm}
+                  closeModal = {closeModalForm}>
+                  
+                  <ContactForm/>
+                  </Modal>
+                  <a className="pago-btn" onClick={openModalForm}>Más Info</a>
                   <a className="pago-btn" href={link} target="_blank">Paga aquí</a>
 
                   

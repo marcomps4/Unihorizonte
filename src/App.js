@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './pages/Header';
 import Home from './pages/Home';

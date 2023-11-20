@@ -42,7 +42,7 @@
     transition: 0.3s;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     
   }
   
@@ -72,7 +72,9 @@
 
 .econtinuada-btn{
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
+  flex-direction: column;
+  text-align: center;
   
 
  }
@@ -89,6 +91,7 @@
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
     text-decoration: none;
+    cursor: pointer;
   }
   
   .econtinuada .pago-btn:hover {
@@ -106,11 +109,13 @@
     text-align: center;
     
   }
-  
+
   .econtinuada .econtinuada-item .meta i {
-    font-size: 16px;
-    color: var(--color-primary);
+    font-size: 18px;
+    color: var(--color-secondary);
+    
   }
+  
 
   .econtinuada .econtinuada-item .meta .bar {
     padding-right: 1rem;
@@ -127,8 +132,9 @@
 
   
   .econtinuada .econtinuada-item .meta span   {
-    font-size: 15px;
+    font-size: 14px;
     color: #838893;
+    padding-top: 5px;
     
   }
 
@@ -212,6 +218,128 @@
 
 }
 
+/*Formulario*/
+
+.econtinuada .form_econtinua .tittle_form h3::after{
+  content: "";
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--color-primary);
+  margin: 0 auto;
+  margin-top: 10px;
+
+}
+
+.econtinuada .form_econtinua{
+  background-color: #fff;
+  border-radius: 20px;
+  height: 465px;
+  width: 324px;
+  margin: 0 auto;
+  
+}
+
+.econtinuada .tittle_form {
+  padding-top: 25px;
+}
+
+.econtinuada .item_form{
+  margin: 20px 27px;
+}
+
+.items_form{
+  display: flex;
+  align-items: center;
+}
+
+.label_econtinua{
+  display: grid;
+  width: 100px;
+  padding: .8rem 0;
+  grid-template-areas: "input";
+  > *{
+    grid-area: input;
+  }
+}
+.econtinuada .span_form_econtinua{
+  transform-origin: left;
+  transition: transform .3s, color .3s;
+
+  font-size: 16px;
+}
+
+ .icon_form i{
+  font-size: 25px;
+  color: var(--color-secondary);
+  margin-right: 5px;
+}
+
+.econtinuada .input_econtinua{
+  height: 40px;
+  outline: none;
+  border: 1px solid #00376c;
+  font: inherit;
+  width: 270px;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 10px;
+
+  &:focus + .span_form_econtinua,
+  &:not(:placeholder-shown) + .span_form_econtinua{
+    color: var(--color-primary);
+    transform:  translate(8%, -80%) scale(.8);
+    
+   
+    
+  }
+}
+
+::placeholder {
+  
+  font-size: 14px;
+}
+
+.input_texta_econtinua{
+  height: 100%;
+  outline: none;
+  border: 1px solid #00376c;
+  border-radius: 10px;
+  font-size: 14px;
+  
+
+}
+
+.input_texta_econtinua{
+  margin: .8rem 0;
+  padding: 10px;
+}
+
+
+
+  .econtinuada .pago-btn-form {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #fff;
+  }
+  
+  .econtinuada .pago-btn-form:hover {
+    background: #fff;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+  }
 
 
 
