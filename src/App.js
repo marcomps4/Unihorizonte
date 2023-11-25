@@ -38,7 +38,9 @@ import EspGerenciaProyectos from '../src/pages/programas/Posgrados/EspGerenciaPr
 import EspAva from '../src/pages/programas/Posgrados/EspAva';
 import EducacionContinua from '../src/pages/programas/Econtinuada/Econtinuada';
 import Investigación from '../src/pages/Investigacion';
-import Construccion from '../src/pages/Construccion'
+import Construccion from '../src/pages/Construccion';
+import NoticiasDetalle from './pages/NoticiasDetalle';
+import NoticiasHome from '../src/componentes/header/Noticias/Noticias';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -52,8 +54,8 @@ function App() {
 
   return null;
 }
-  
-  
+
+
   
 
   return (
@@ -61,7 +63,7 @@ function App() {
     <Router>
       <ScrollToTop/>
       <Header/>
-    <Routes>
+    <Routes >
       <Route path='/' element={<Home/>}/>
       <Route path='/Quienessomos' element={<QuienesSomos/>}/>
       <Route path='/Documentos' element={<Documentos/>}/>
@@ -95,6 +97,8 @@ function App() {
       <Route path='/facultades/facultadCienciasAdministrativas/tecGestionAdministrativayFinanciera' element={<TecGestionAdminiFinan/>}/>
       <Route path='/facultades/facultadCienciasAdministrativas/AdminSst' element={<Sst/>}/>
       <Route path='/educacionContinua' element={<EducacionContinua/>}/>
+      <Route path="/noticias" element={<NoticiasHome />} />
+      <Route path="/noticias/:id" element={<NoticiasDetalle />} />
       <Route path='/investigacion' element={<Investigación/>}/>
       <Route path='/construccion' element={<Construccion/>}/>
       <Route /*path='*' element={<Page404/>}*//>

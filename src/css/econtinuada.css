@@ -235,7 +235,7 @@
 .econtinuada .form_econtinua{
   background-color: #fff;
   border-radius: 20px;
-  height: 465px;
+  height: 495px;
   width: 324px;
   margin: 0 auto;
   
@@ -339,6 +339,27 @@
     background: #fff;
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
+  }
+
+  .econtinuada .success-message{
+    background: #00376c;
+    padding: 8px 28px;
+    color: #fff;
+    padding: 5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: .2s ease-in-out;
+  }
+  .econtinuada .success-message p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .econtinuada .error-message{
+    background: #00376c;
+    padding: 8px 28px;
+    color: #fff;
+
   }
 
 

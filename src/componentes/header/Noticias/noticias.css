@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 .New .posts-list .post-item {
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
     transition: 0.3s;
@@ -34,6 +38,7 @@
     margin-bottom: 15px;
     cursor: pointer;
   }
+
   
   .New .posts-list .meta i {
     font-size: 16px;

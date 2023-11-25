@@ -8,6 +8,7 @@ import modelo1 from '../../src/documentos/calidad/unihorizonte-modeloAutoevaluac
 import PEI from '../../src/documentos/D-119-PEI-UNIHORIZONTE-2019-R-VACI.pdf'
 import PDI from '../../src/documentos/PDI-2021-2026-UniHorizonte-V2-1.pdf'
 import calendarioa from '../../src/documentos/Calendario-academico-2023-I-.pdf'
+import calendarioa1 from '../../src/documentos/calendario-academico-2023-2.pdf'
 import EscalafonD from '../../src/documentos/unihorizonte-ACUERDO_013_2015-escalafonDocente_codigoEtica_buenGobierno.pdf'
 import opciongrado from '../../src/documentos/unihorizonte-ACUERDO_088-1-OPCIONES_DE_GRADO_2020.pdf'
 import Idiomas from '../../src/documentos/politicas/GUIA-IDIOMAS.pdf'
@@ -132,10 +133,13 @@ const Documentos = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
-        <Accordion.Header><i className="bi bi-cloud-download-fill icon-help"></i>Calendario Académico 2023-1</Accordion.Header>
+        <Accordion.Header><i className="bi bi-cloud-download-fill icon-help"></i>Calendario Académico 2023</Accordion.Header>
         <Accordion.Body>
         <a href={calendarioa} target="_blank" >
-        <i className="bi bi-file-earmark-arrow-down icon-download"></i>Calendario Académico
+        <i className="bi bi-file-earmark-arrow-down icon-download"></i>Calendario Académico 2023-1
+        </a>
+        <a href={calendarioa1} target="_blank" >
+        <i className="bi bi-file-earmark-arrow-down icon-download"></i>Calendario Académico 2023-2
         </a>
         </Accordion.Body>
       </Accordion.Item>

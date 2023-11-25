@@ -21,7 +21,7 @@ const Inscripcion = () =>{
           <h2>Queremos conocerte</h2>
           <div className="our-story">
             <p>¡Convierte tus Sueños en Realidad Ahora!</p>
-            <p>Ven a la U de la Felicidad, el Bilingüismo, la innovación, la tecnología y el emprendimiento. </p>
+            <p>Ven al Horizonte de la Felicidad, el Bilingüismo, la Innovación, la Tecnología y el Emprendimiento. </p>
             <p>Entra en el mundo de infinitas posibilidades. ¿Alguna vez has deseado cambiar tu vida, alcanzar tus metas más ambiciosas y vivir el estilo de vida que siempre has soñado? ¡Ahora es tu momento! Pero para hacerlo posible, necesitamos tu ayuda. </p>
             <p>Nosotros estamos aquí para ayudarte a transformar tus sueños en realidad, estamos para ti, para que tus pasiones sean lo que mueve tú ser. Necesitamos tu ayuda, déjanos tus datos para que podamos ofrecerte las herramientas y recursos adecuados. Con tu información, podemos personalizar nuestra orientación y proporcionarte el apoyo que necesitas. </p>
 

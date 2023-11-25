@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import '../formulario/formEcontinua.css';
+
 
 const ContactForm = () => {
   const initialFormData = {
@@ -78,7 +78,7 @@ const ContactForm = () => {
       // Limpiar los campos después de un envío exitoso
       setFormData(initialFormData);
       // Mostrar el mensaje de éxito
-      setSuccessMessage('¡Formulario enviado con éxito!');
+      setSuccessMessage('¡Pronto nos comunicaremos contigo!');
       setShowSuccessMessage(true);
 
       // Ocultar el mensaje después de unos segundos
@@ -95,13 +95,23 @@ const ContactForm = () => {
       <div className='tittle_form'>
         <h3>Contáctenos</h3>
       </div>
+
+
       
     <form onSubmit={handleSubmit} className="item_form">
       <div className="items_form">
     
       <label className='label_econtinua'>
-        <input type="text" name="name" value={formData.name} onChange={handleChange} className='input_econtinua' placeholder=" " />
+        <input 
+        type="text" 
+        name="name" 
+        value={formData.name} 
+        onChange={handleChange}
+        className='input_econtinua' 
+        placeholder=" "
+        required />
         <span className='span_form_econtinua'><i className="bi bi-person-badge-fill icon_form"></i> Ingresa tu nombre</span>
+        {formErrors.name && <p className="error-message">{formErrors.name}</p>}
       </label>
       </div>
 
@@ -109,20 +119,42 @@ const ContactForm = () => {
       <div className="items_form">
       
       <label className='label_econtinua'> 
-        <input type="email" name="email" value={formData.email} onChange={handleChange} className='input_econtinua' placeholder=" "  />
+        <input 
+        type="email" 
+        name="email" 
+        value={formData.email} 
+        onChange={handleChange} 
+        className='input_econtinua' 
+        placeholder=" "
+        required  />
         <span className='span_form_econtinua'> <i className="bi bi-envelope-at-fill icon_form"></i> Correo electrónico</span>
+        {formErrors.email && <p className="error-message">{formErrors.email}</p>}
       </label>
       </div>
 
       <div className="items_form">
      
         {/* <textarea name="message" value={formData.message} onChange={handleChange} /> */}
-        <textarea  name='message' value={formData.message} onChange={handleChange} className='input_texta_econtinua' placeholder="Mensaje" rows="5" cols="40">
+        <textarea  
+        name='message' 
+        value={formData.message} 
+        onChange={handleChange} 
+        className='input_texta_econtinua' 
+        placeholder="Mensaje" 
+        rows="5" 
+        cols="40"
+        required>
         </textarea>
-    
+        {formErrors.message && <p className="error-message">{formErrors.message}</p>}
       </div>
       <button type="submit" className='pago-btn-form' >Enviar</button>
     </form>
+
+    {showSuccessMessage && (
+        <div className='success-message'>
+          <p>{successMessage}</p>
+        </div>
+      )}
 
     </div>
   );

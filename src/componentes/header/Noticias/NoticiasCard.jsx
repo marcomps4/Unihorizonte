@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom"
 
-export const CardNoticias=({title,imgUrl,fecha,nombre,resumen}) =>{
+export const CardNoticias=({id,title,imgUrl,fecha,nombre,resumen}) =>{
+
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: (0,0),
+      behavior: 'smooth',
+    });
+  }
     return(
         <div className="col-xl-4 col-md-6">
                 <div className="post-item position-relative h-100">
@@ -12,7 +19,7 @@ export const CardNoticias=({title,imgUrl,fecha,nombre,resumen}) =>{
     
                   <div className="post-content d-flex flex-column">
     
-                   <Link to=""><h3 className="post-title">{title}</h3></Link>
+                   <Link to={`/noticias/${id}`} onClick={ScrollToTop}><h3 className="post-title">{title} </h3></Link>
     
                     <div className="meta d-flex align-items-center">
                       <div className="d-flex ">
