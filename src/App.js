@@ -41,6 +41,8 @@ import Investigación from '../src/pages/Investigacion';
 import Construccion from '../src/pages/Construccion';
 import NoticiasDetalle from './pages/NoticiasDetalle';
 import NoticiasHome from '../src/componentes/header/Noticias/Noticias';
+import Blog from '../src/pages/Blog';
+import BlogDetalle from '../src/componentes/blog/BlogDetalles';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -99,6 +101,8 @@ function App() {
       <Route path='/educacionContinua' element={<EducacionContinua/>}/>
       <Route path="/noticias" element={<NoticiasHome />} />
       <Route path="/noticias/:id" element={<NoticiasDetalle />} />
+      <Route path="/Horizontista/blog" element={<Blog />} />
+      <Route path="/Horizontista/blog/:id" element={<BlogDetalle />} />
       <Route path='/investigacion' element={<Investigación/>}/>
       <Route path='/construccion' element={<Construccion/>}/>
       <Route /*path='*' element={<Page404/>}*//>

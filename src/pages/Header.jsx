@@ -129,11 +129,11 @@ const Header = () => {
             <ul>
               <li className="dropdown" onClick={toggleDropdown}><Link to="/construccion" onClick={ScrollToTop}><span>Egresados</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
                 <ul>
-                  <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/egresados/"onClick={toggleDropdown}>Egresados</a></li>
-                  <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/eventos-para-egresados/"onClick={toggleDropdown}>Noticias para Egresados</a></li>
+                  <li><Link to="/construccion"onClick={toggleDropdown}>Egresados</Link></li>
+                  <li><Link to="/construccion"onClick={toggleDropdown}>Noticias para Egresados</Link></li>
                 </ul>
               </li>
-              <li><a href="https://unihorizonte.edu.co/soy-unihorizontista/practicas/">Prácticas</a></li>
+              <li><Link to="/construccion">Prácticas</Link></li>
             </ul>
           </li>
 
@@ -142,9 +142,10 @@ const Header = () => {
 
           <li className="dropdown" onClick={toggleDropdown}><Link to="#"><span>Horizontista</span> <i className="bi bi-chevron-down dropdown-indicator"></i></Link>
             <ul>
-              <li onClick={handleNavlinkClick}><a href="https://unihorizonte.edu.co/soy-unihorizontista/bienestar/"onClick={toggleDropdown}>Bienestar Universitario</a></li>
-              <li onClick={handleNavlinkClick}><a href="https://unihorizonte.edu.co/biblioteca/"onClick={toggleDropdown}>Biblioteca</a></li>
+              <li onClick={handleNavlinkClick}><Link to="/construccion"onClick={toggleDropdown}>Bienestar Universitario</Link></li>
+              <li onClick={handleNavlinkClick}><Link to="/construccion"onClick={toggleDropdown}>Biblioteca</Link></li>
               <li onClick={handleNavlinkClick}><a href="https://site2.q10.com/SolicitudesInstitucionales/NuevaSolicitud?aplentId=8fea0808-7bab-4370-8802-1e51d36b878c" onClick={toggleDropdown} target='_blank'>Solicitudes Institucionales</a></li>
+              <li onClick={handleNavlinkClick}><Link to="/Horizontista/blog"onClick={toggleDropdown}>Blog</Link></li>
             </ul>
           </li>
 

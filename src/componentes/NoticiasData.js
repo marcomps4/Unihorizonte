@@ -41,6 +41,11 @@ const noticiasData =[
       icono: <HiMiniMagnifyingGlass />,
       categoria: "Investigación"
     },
+    
+
+    
+    
+    
 
     
    
