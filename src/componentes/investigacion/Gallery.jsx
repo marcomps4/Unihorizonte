@@ -25,20 +25,20 @@ export const Galeria = () => {
         loop={true}
         slidesPerView={'auto'}
         coverflowEffect={{
-            rotate: 1,
-            stretch: 50,
-            depth: 100,
-            modifier: 3,
-            
+          rotate: 1,
+          stretch: 50,
+          depth: 100,
+          modifier: 3,
         }}
         className='swiper_card_investigacion'
-        modules={[EffectCoverflow, Pagination, Navigation, ]}
-
+        modules={[EffectCoverflow, Pagination, Navigation]}
+  
         navigation={{
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            clickable: true}}
-        pagination={{el: '.swiper-pagination', clickable: true }}
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
         autoplay={true}
 
 

@@ -1,16 +1,26 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import noticiasData from "../componentes/NoticiasData";
 import NoticiasHome from '../componentes/header/Noticias/Noticias';
 import  '../css/noticias_page.css';
-import imgside1 from '../img/Noticias/side-bar-1.jpg';
-import imgside2 from '../img/Noticias/side-bar-2.jpg';
-import imgside3 from '../img/Noticias/side-bar-3.jpg';
-import imgside4 from '../img/Noticias/side-bar-4.jpg';
-import imgside5 from '../img/Noticias/side-bar-5.jpg';
+import imgside1 from '../img/Noticias/new_1.jpg';
+import imgside2 from '../img/Noticias/new_2.jpg';
+import imgside3 from '../img/Noticias/new_3.jpg';
+
 
 
 const NoticiasDetalle = () => {
+
+  const ScrollToTop = () => {
+    window.scrollTo({
+      top: (0,0),
+      behavior: 'smooth',
+    });
+  }
+
+
+  
   const { id } = useParams();
   const noticiaId = parseInt(id);
 
@@ -124,45 +134,31 @@ const NoticiasDetalle = () => {
 
     <div className="mt-3">
 
-      <div className="post-item mt-3">
+      <div className="post-item">
         <img src={imgside1} alt=""/>
         <div>
-          <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
-          <time >Julio 1, 2023</time>
+          <h4><Link to={`/noticias/1`}onClick={ScrollToTop}>El eje de la felicidad se refuerza Horizonte en la Fundación Universitaria con los nuevos torniquetes – ¡sino sonríes no entras!</Link></h4>
+          <time >NOVIEMBRE 7,2023</time>
         </div>
       </div>
 
       <div className="post-item">
         <img src={imgside2} alt=""/>
         <div>
-          <h4><a href="#">Quidem autem et impedit</a></h4>
-          <time >Agosto 13, 2023</time>
+          <h4><Link to={`/noticias/2`}onClick={ScrollToTop}>Las Emociones de los Alimentos: Un Viaje Desde el Placer al Significado</Link></h4>
+          <time >OCTUBRE 24,2023</time>
         </div>
       </div>
 
       <div className="post-item">
         <img src={imgside3} alt=""/>
         <div>
-          <h4><a href="#">Id quia et et ut maxime similique occaecati ut</a></h4>
-          <time >Sept 15, 2023</time>
+          <h4><Link to={`/noticias/3`}onClick={ScrollToTop}>Análisis de texto y lecturas en estudiantes universitarios: Explorando las causas de la falta de gusto</Link></h4>
+          <time >OCTUBRE 9,2023</time>
         </div>
       </div>
 
-      <div className="post-item">
-        <img src={imgside4} alt=""/>
-        <div>
-          <h4><a href="#">Laborum corporis quo dara net para</a></h4>
-          <time >Sept 15, 2023</time>
-        </div>
-      </div>
-
-      <div className="post-item">
-        <img src={imgside5} alt=""/>
-        <div>
-          <h4><a href="#">Et dolores corrupti quae illo quod dolor</a></h4>
-          <time >Sept 15, 2023</time>
-        </div>
-      </div>
+     
 
     </div>
 

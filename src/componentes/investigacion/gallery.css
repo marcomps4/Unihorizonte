@@ -36,14 +36,39 @@
     display: none;
   }
   
-  .slider-controler {
+  .slider-controler{
     position: relative;
-    bottom: 2rem;
+    bottom: 5rem;
+    
+  }
+  
+
+  .arrow-button-wrapper {
+    background: var(--white);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    left: 40%;
+    transform: translateX(-42%);
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    color: var(--color-default);
+    cursor: pointer; /* Agrega esto para indicar que es clickeable */
     display: flex;
     align-items: center;
     justify-content: center;
-    
   }
+
+  .slider-controler .slider-arrow {
+    font-size: 2rem;
+    color: #222224;
+    margin: 1px;
+  }
+
+
+.arrow-button-wrapper {
+  padding: 10px; /* Ajusta este valor según tus necesidades */
+}
+
   
   .slider-controler .swiper-button-next {
     left: 60% !important;
@@ -91,9 +116,10 @@
     transform: translateX(-42%);
     filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
     color: var(--color-default);
+    
   }
   
-  .slider-controler .slider-arrow ion-icon {
+  .slider-controler .slider-arrow .ion-icon {
     font-size: 2rem;
     color: #222224;
   }
@@ -102,12 +128,7 @@
     content: '';
   }
   
-  .swiper-pagination {
-    position: relative;
-    width: 25rem ;
-    bottom: 2rem;
 
-  }
   
   .swiper-pagination .swiper-pagination-bullet {
     filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
@@ -115,4 +136,10 @@
   
   .swiper-pagination .swiper-pagination-bullet-active {
     background: var(--color-primary);
+  }
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: -30px;
+    z-index: 1;
+    
   }

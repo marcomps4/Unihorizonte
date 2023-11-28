@@ -9,10 +9,10 @@ import docuproyinvesti from '../../src/documentos/investigacion/4_F-165 PROYECTO
 import docuanteproyecto from '../../src/documentos/investigacion/3_F-051 ANTEPROYECTO_VF.doc';
 import prueba from '../img/investigacion/inves1.jpg';
 import prueba1 from '../img/investigacion/invest2.jpg';
-import prueba2 from '../img/investigacion/invest3.jpg';
+import prueba2 from '../img/investigacion/galericopy.jpg';
 import prueba4 from '../img/investigacion/galeri3.jpeg';
 import prueba5 from '../img/investigacion/galeri6.jpg';
-import prueba6 from '../img/investigacion/invest7.jpg';
+import prueba6 from '../img/investigacion/galeri_copy.jpg';
 import prueba7 from '../img/investigacion/invest8.jpg';
 import logoImg from '../img/investigacion/logo_gcena.svg';
 import logoImg1 from '../img/investigacion/logo-sisom.svg';
@@ -44,7 +44,7 @@ const Investigación = () => {
     {
       title: "Grupo de Investigación en Enseñanza de las Ciencias Exactas y Naturales Aplicadas",
       imgUrl: logoImg,
-      imgback: prueba2,
+      imgback: prueba6,
       categoria: "COL0199192-Categoría C",
       depto: "Facultad de ingeniería",
       lider: "Líder(es): Luisa García-Diana Tamayo",
@@ -80,7 +80,7 @@ const Investigación = () => {
     {
       title: "Grupo de Investigación TECH-INNOVA",
       imgUrl: logoImg6,
-      imgback: prueba6,
+      imgback: prueba2,
       categoria: "COL0229658",
       depto: "Facultad de ingeniería – ingeniería de Software",
       lider: "Líder: Diana Patricia Camargo",
@@ -122,10 +122,19 @@ const Investigación = () => {
 
 <div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
     <img src={info1} className="img-fluid revistas" alt=""/>
+    <div className="pia-descarga ">
+
+    <div className="pia-descarga-item d-flex justify-content-center">
+          <a href={docuproyinvesti}><i><GrDocumentDownload/></i>
+          <p>formato proyecto de investigación</p></a>
+          <a href={docuanteproyecto}><i><GrDocumentDownload/></i>
+          <p>formato de anteproyecto</p></a>
+          </div>
+  </div>
   </div>
 
   <div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
-    <img src={info2} className="img-fluid revistas" alt=""/>
+    
     <img src={info3} className="img-fluid revistas" alt=""/>
   </div>
   </div>
@@ -246,12 +255,7 @@ const Investigación = () => {
           <p>Poster pia</p></a>
           </div>
 
-          <div className="pia-descarga-item d-flex justify-content-center">
-          <a href={docuproyinvesti}><i><GrDocumentDownload/></i>
-          <p>formato proyecto de investigación</p></a>
-          <a href={docuanteproyecto}><i><GrDocumentDownload/></i>
-          <p>formato de anteproyecto</p></a>
-          </div>
+          
           <div className="pia-descarga-item d-flex justify-content-center">
           <a href="https://outlook.office365.com/owa/calendar/AsesoraspostersPIAS@unihorizonte.edu.co/bookings/" target="_blank"><i><GiVideoConference/></i>
           <p>Sesiones de acompañamiento</p></a>
