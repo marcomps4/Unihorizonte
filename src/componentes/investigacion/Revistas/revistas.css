@@ -1,17 +1,18 @@
 
 /*--------------------------------------------------------------
-# econtinuada Page 
+# revistas Page 
 --------------------------------------------------------------*/
 
-.econtinuada{
+.revistas{
     justify-content: center;
+    padding: 168px 0;
 }
 
-.econtinuada p{
+.revistas p{
     text-align: justify;
 }
 
-.econtinuada h2{
+.revistas h2{
     font-size: 48px;
     font-weight: 700;
     color: var(--color-secondary);
@@ -20,39 +21,48 @@
 
   @media (max-width: 1200px) {
 
-    .econtinuada h2 {
+    .revistas h2 {
     text-align: center;
     margin: 0 0 60px 0;
     }
 
   }
   @media (max-width: 375px) {
-    .econtinuada-item{
+    .revistas-item{
          width: 100%;
     }
     
   }
   
-.econtinuada-card{
+.revistas-card{
   margin-bottom: 50px;
 }
   
-  .econtinuada .econtinuada-item {
+  .revistas .revistas-item {
     box-shadow: 19px 26px 32px -2px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin-bottom: 70px;
+    width: 425px;
+    margin: 0 auto;
+
     
   }
-  
+  @media (max-width: 768px){
+    .revistas .revistas-item  {
+      flex-direction: column;
+      width: auto;
+      margin: 5px;
+      }
+  }
+
 
   
-  .econtinuada .econtinuada-item .econtinuada-img img {
+  .revistas .revistas-item .revistas-img img {
     transition: 0.5s;
   }
   
-  .econtinuada .econtinuada-item .econtinuada-date {
+  .revistas .revistas-item .revistas-date {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -66,12 +76,12 @@
     
   }
   
-  .econtinuada  .econtinuada-content {
+  .revistas  .revistas-content {
     padding: 30px;
   }
 
-.econtinuada-btn{
-  position: absolute;
+.revistas-btn{
+
   bottom: 10px;
   flex-direction: column;
   text-align: center;
@@ -79,7 +89,7 @@
 
  }
 
-  .econtinuada .pago-btn {
+  .revistas .pago-btn {
     font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -94,13 +104,13 @@
     cursor: pointer;
   }
   
-  .econtinuada .pago-btn:hover {
+  .revistas .pago-btn:hover {
     background: var(--color-primary);
     border-color: var(--color-primary);
     color: #fff;
   }
   
-  .econtinuada .econtinuada-item .econtinuada-title {
+  .revistas .revistas-item .revistas-title {
     font-size: 20px;
     color: var(--color-secondary);
     font-weight: 700;
@@ -110,20 +120,20 @@
     
   }
 
-  .econtinuada .econtinuada-item .meta i {
+  .revistas .revistas-item .meta i {
     font-size: 18px;
     color: var(--color-secondary);
     
   }
   
 
-  .econtinuada .econtinuada-item .meta .bar {
+  .revistas .revistas-item .meta .bar {
     padding-right: 1rem;
     padding-left: 1rem;
   }
 
   @media (min-width: 768px){
-    .econtinuada .econtinuada-item .meta .bar {
+    .revistas .revistas-item .meta .bar {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
       }
@@ -131,7 +141,7 @@
 
 
   
-  .econtinuada .econtinuada-item .meta span   {
+  .revistas .revistas-item .meta span   {
     font-size: 14px;
     color: #838893;
     padding-top: 5px;
@@ -140,12 +150,12 @@
 
   
   
-  .econtinuada .econtinuada-item hr {
+  .revistas .revistas-item hr {
     color: #888;
     margin: 20px 0;
   }
   
-  .econtinuada .econtinuada-item .readmore {
+  .revistas .revistas-item .readmore {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -154,25 +164,25 @@
     color: #838893;
   }
   
-  .econtinuada .econtinuada-item .readmore i {
+  .revistas .revistas-item .readmore i {
     line-height: 0;
     margin-left: 6px;
     font-size: 16px;
   }
   
-  .econtinuada .posecontinuadat-item:hover .econtinuada-title,
-  .econtinuada .econtinuada-item:hover .readmore {
+  .revistas .posrevistast-item:hover .revistas-title,
+  .revistas .revistas-item:hover .readmore {
     color: var(--color-primary);
   }
   
-  .econtinuada .econtinuada-item:hover .econtinuada-img img {
+  .revistas .revistas-item:hover .revistas-img img {
     transform: scale(1.1);
   }
 
   /*--------------------------------------------------------------
-# econtinuada-items
+# revistas-items
 --------------------------------------------------------------*/
-.econtinuada .nav-link{
+.revistas .nav-link{
   color: var(--color-secondary);
   padding: 20px 20px;
   font-size: 18px;
@@ -182,13 +192,13 @@
   
   
 }
-.econtinuada .nav-link:hover{
+.revistas .nav-link:hover{
   color: #00376c;
   background-color: #e6e6e6;
   
 }
 
-.econtinuada .nav-pills .nav-link.active {
+.revistas .nav-pills .nav-link.active {
   background-color:#00376c;
   color: #fff;
   padding: 20px 20px;
@@ -197,11 +207,11 @@
   
 }
 
-.econtinuada .tab-content{
+.revistas .tab-content{
   height: 100%;
 }
 
-.econtinuada .tab-content h3{
+.revistas .tab-content h3{
   font-weight: 700;
   color: var(--color-secondary);
   margin-bottom: 30px;
@@ -210,164 +220,11 @@
 
 
 @media (min-width: 374px) {
-  .econtinuada.nav-link, .nav-pills .nav-link.active{
+  .revistas.nav-link, .nav-pills .nav-link.active{
   text-align: center;
 
 }
 
 
 }
-
-/*Formulario*/
-
-.econtinuada .form_econtinua .tittle_form h3::after{
-  content: "";
-  position: relative;
-  display: block;
-  width: 100px;
-  height: 4px;
-  background-color: var(--color-primary);
-  margin: 0 auto;
-  margin-top: 10px;
-
-}
-
-.econtinuada .form_econtinua{
-  background-color: #fff;
-  border-radius: 20px;
-  height: 495px;
-  width: 324px;
-  margin: 0 auto;
-  
-}
-
-.econtinuada .tittle_form {
-  padding-top: 25px;
-}
-
-.econtinuada .item_form{
-  margin: 20px 27px;
-}
-
-.items_form{
-  display: flex;
-  align-items: center;
-}
-
-.label_econtinua{
-  display: grid;
-  width: 100px;
-  padding: .8rem 0;
-  grid-template-areas: "input";
-  > *{
-    grid-area: input;
-  }
-}
-.econtinuada .span_form_econtinua{
-  transform-origin: left;
-  transition: transform .3s, color .3s;
-
-  font-size: 16px;
-}
-
- .icon_form i{
-  font-size: 25px;
-  color: var(--color-secondary);
-  margin-right: 5px;
-}
-
-.econtinuada .input_econtinua{
-  height: 40px;
-  outline: none;
-  border: 1px solid #00376c;
-  font: inherit;
-  width: 270px;
-  font-size: 14px;
-  border-radius: 10px;
-  padding: 10px;
-
-  &:focus + .span_form_econtinua,
-  &:not(:placeholder-shown) + .span_form_econtinua{
-    color: var(--color-primary);
-    transform:  translate(8%, -80%) scale(.8);
-    
-   
-    
-  }
-}
-
-::placeholder {
-  
-  font-size: 14px;
-}
-
-.input_texta_econtinua{
-  height: 100%;
-  outline: none;
-  border: 1px solid #00376c;
-  border-radius: 10px;
-  font-size: 14px;
-  
-
-}
-
-.input_texta_econtinua{
-  margin: .8rem 0;
-  padding: 10px;
-}
-
-
-
-  .econtinuada .pago-btn-form {
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    display: inline-block;
-    padding: 8px 28px;
-    border-radius: 25px;
-    transition: 0.5s;
-    margin-top: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    width: 100%;
-    background: var(--color-primary);
-    border-color: var(--color-primary);
-    color: #fff;
-  }
-  
-  .econtinuada .pago-btn-form:hover {
-    background: #fff;
-    border: 2px solid var(--color-primary);
-    color: var(--color-primary);
-  }
-
-  .econtinuada .success-message{
-    background: #00376c;
-    padding: 8px 28px;
-    color: #fff;
-    padding: 5px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    transition: .2s ease-in-out;
-  }
-  .econtinuada .success-message p{
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .econtinuada .error-message{
-    background: #00376c;
-    padding: 8px 28px;
-    color: #fff;
-
-  }
-
-
-
-
-
-
-
-
-
 

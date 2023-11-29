@@ -1,9 +1,9 @@
 import React from "react";
 import '../css/investigacion.css';
 import bannercadmon from '../../src/img/investigacion/banner.jpg';
-import revista1 from '../img/investigacion/styllus.png';
+import revista1 from '../img/investigacion/revista_stylus/vol1dos.png';
+import revista2 from '../img/investigacion/revista_teckne/vol17.JPG';
 import logopia from '../img/investigacion/logo_pias.png';
-import revistapdf1 from '../../src/documentos/revista_stylus.pdf';
 import documpia from '../../src/documentos/investigacion/formato_PIA_2023_VF.docx';
 import docuproyinvesti from '../../src/documentos/investigacion/4_F-165 PROYECTO INVESTIGACION_VF.docx';
 import docuanteproyecto from '../../src/documentos/investigacion/3_F-051 ANTEPROYECTO_VF.doc';
@@ -27,6 +27,7 @@ import {CardInvestigacion} from '../componentes/investigacion/CardInvestigacion'
 import {GrDocumentDownload} from "react-icons/gr";
 import {GiVideoConference} from "react-icons/gi"
 import {Galeria} from "../componentes/investigacion/Gallery";
+import { Link } from "react-router-dom";
 
 
 const Investigación = () => {
@@ -171,12 +172,12 @@ const Investigación = () => {
 
         <div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
             <h3 className="text-center">Enlace a Stylus</h3>
-            <a href={revistapdf1} target="_blank"><img src={revista1} className="img-fluid revistas" alt=""/></a>
+            <Link to='/investigacion/stylus'><img src={revista1} className="img-fluid revistas" alt=""/></Link>
           </div>
 
           <div className="col-lg-6 col-sm-12" data-aos="zoom-in" data-aos-delay="200">
             <h3 className="text-center ">Enlace a TECKNE</h3>
-            <img src={revista1} className="img-fluid revistas" alt=""/>
+            <Link to='/investigacion/teckne'><img src={revista2} className="img-fluid revistas" alt=""/></Link>
           </div>
           </div>
 

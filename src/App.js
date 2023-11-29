@@ -38,6 +38,8 @@ import EspGerenciaProyectos from '../src/pages/programas/Posgrados/EspGerenciaPr
 import EspAva from '../src/pages/programas/Posgrados/EspAva';
 import EducacionContinua from '../src/pages/programas/Econtinuada/Econtinuada';
 import Investigación from '../src/pages/Investigacion';
+import Teckne from '../src/componentes/investigacion/Revistas/revista_teckne/Revista_teckne';
+import Stylus from '../src/componentes/investigacion/Revistas/revista_stylus/Revista_stylus';
 import Construccion from '../src/pages/Construccion';
 import NoticiasDetalle from './pages/NoticiasDetalle';
 import NoticiasHome from '../src/componentes/header/Noticias/Noticias';
@@ -104,6 +106,8 @@ function App() {
       <Route path="/Horizontista/blog" element={<Blog />} />
       <Route path="/Horizontista/blog/:id" element={<BlogDetalle />} />
       <Route path='/investigacion' element={<Investigación/>}/>
+      <Route path='/investigacion/teckne' element={<Teckne/>}/>
+      <Route path='/investigacion/stylus' element={<Stylus/>}/>
       <Route path='/construccion' element={<Construccion/>}/>
       <Route /*path='*' element={<Page404/>}*//>
       
