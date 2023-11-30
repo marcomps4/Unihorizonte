@@ -45,6 +45,7 @@ import NoticiasDetalle from './pages/NoticiasDetalle';
 import NoticiasHome from '../src/componentes/header/Noticias/Noticias';
 import Blog from '../src/pages/Blog';
 import BlogDetalle from '../src/componentes/blog/BlogDetalles';
+import Bienestar from './pages/Bienestar';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -109,6 +110,7 @@ function App() {
       <Route path='/investigacion/teckne' element={<Teckne/>}/>
       <Route path='/investigacion/stylus' element={<Stylus/>}/>
       <Route path='/construccion' element={<Construccion/>}/>
+      <Route path='/Bienestar' element={<Bienestar/>}/>
       <Route /*path='*' element={<Page404/>}*//>
       
     </Routes>  
